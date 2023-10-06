@@ -2,6 +2,6 @@
 {
     public interface IKlientEntityService
     {
-        public KlientEntity AddKlientEntity(KlientEntity klientEntity);
+       
     }
 }
