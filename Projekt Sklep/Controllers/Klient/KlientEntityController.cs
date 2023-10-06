@@ -9,6 +9,7 @@ namespace Projekt_Sklep.Controllers.Klient
     [ApiController]
     public class KlientEntityController : ControllerBase
     {
+        readonly KlientEntityService klientEntityService;
         [HttpGet]
         public ActionResult<IEnumerable<KlientEntity>> GetAll()
         {
