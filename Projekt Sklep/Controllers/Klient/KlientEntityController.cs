@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Persistence.Klient;
 
 namespace Projekt_Sklep.Controllers.Klient
 {
