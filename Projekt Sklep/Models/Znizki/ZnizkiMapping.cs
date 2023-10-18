@@ -1,4 +1,5 @@
 ﻿using FluentNHibernate.Mapping;
+using NHibernate.Type;
 
 namespace Projekt_Sklep.Models.Znizki
 {
@@ -10,7 +11,8 @@ namespace Projekt_Sklep.Models.Znizki
         {
             Id(x => x.Id).GeneratedBy.Guid();
             Map(x => x.Dorosly_dziecko);
-            Map(x => x.Wiek);
+            Map(x => x.Wiek)
+                .CustomType<YesNoType>();
             Table(tablename);
         }
     }
