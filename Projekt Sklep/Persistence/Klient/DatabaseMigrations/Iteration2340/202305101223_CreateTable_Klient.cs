@@ -1,4 +1,5 @@
 ﻿using FluentMigrator;
+using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
 
 namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
@@ -13,8 +14,9 @@ namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
             {
                 Create.Table(tableName)
                     .WithColumn(nameof(KlientEntity.Id)).AsGuid().NotNullable().PrimaryKey()
-                    .WithColumn(nameof(KlientEntity.Name)).AsString().NotNullable()
-                    .WithColumn(nameof(KlientEntity.LastName)).AsString().NotNullable();
+                    .WithColumn(nameof(KlientEntity.Imie)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.Nazwisko)).AsString().NotNullable();
+                   
             }
         }
         public override void Down()

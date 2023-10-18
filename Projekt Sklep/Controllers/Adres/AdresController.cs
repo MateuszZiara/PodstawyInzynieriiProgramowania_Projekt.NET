@@ -1,45 +1,47 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Projekt_Sklep.Models;
+using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Persistence.Adres;
 using Projekt_Sklep.Persistence.Klient;
 
-namespace Projekt_Sklep.Controllers.Klient
+namespace Projekt_Sklep.Controllers.Adres
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class KlientEntityController : ControllerBase
+    public class AdresController : ControllerBase
     {
-        readonly KlientEntityService klientEntityService;
+        readonly AdresService adresService;
+
         [HttpGet]
-        public ActionResult<IEnumerable<KlientEntity>> GetAll()
+        public ActionResult<IEnumerable<Models.Adres.Adres>> GetAll()
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntities = session.Query<KlientEntity>().ToList();
-                return Ok(klientEntities);
+                var Adres = session.Query<Models.Adres.Adres>().ToList();
+                return Ok(Adres);
             }
         }
         [HttpGet("{id}")]
-        public ActionResult<KlientEntity> GetById(Guid id)
+        public ActionResult<Models.Adres.Adres> GetById(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntity = session.Get<KlientEntity>(id);
+                var Adres = session.Get<Models.Adres.Adres>(id);
 
-                if (klientEntity == null)
+                if (Adres == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(klientEntity);
+                return Ok(Adres);
             }
 
         }
         [HttpPost]
-        public ActionResult<KlientEntity> CreateKlientEntity([FromBody] KlientEntity klientEntity)
+        public ActionResult<Models.Adres.Adres> CreateAdresEntity([FromBody] Models.Adres.Adres Adres)
         {
-            if (klientEntity == null)
+            if (Adres == null)
             {
                 return BadRequest("Invalid data");
             }
@@ -49,18 +51,17 @@ namespace Projekt_Sklep.Controllers.Klient
                 {
                     try
                     {
-                       session.Save(klientEntity); 
+                        session.Save(Adres);
                         transaction.Commit();
-                        return CreatedAtAction(nameof(GetById), new { id = klientEntity.Id }, klientEntity);
+                        return CreatedAtAction(nameof(GetById), new { id = Adres.Id }, Adres);
                     }
                     catch (Exception ex)
-                    {  
+                    {
                         transaction.Rollback();
                         return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
                     }
                 }
             }
-
         }
         [HttpDelete("{id}")]
         public ActionResult DeleteKlientEntity(Guid id)
@@ -71,24 +72,24 @@ namespace Projekt_Sklep.Controllers.Klient
                 {
                     try
                     {
-                        var klientEntity = session.Get<KlientEntity>(id);
+                        var adres = session.Get<Models.Adres.Adres>(id);
 
-                        if (klientEntity == null)
+                        if (adres == null)
                         {
                             return NotFound();
                         }
 
-                      
-                        session.Delete(klientEntity);
 
-                       
+                        session.Delete(adres);
+
+
                         transaction.Commit();
 
-                        return NoContent(); 
+                        return NoContent();
                     }
                     catch (Exception ex)
                     {
-                       
+
                         transaction.Rollback();
                         return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
                     }

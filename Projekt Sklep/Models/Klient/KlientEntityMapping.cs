@@ -8,8 +8,12 @@ namespace Projekt_Sklep.Models.Klient
         public KlientEntityMapping()
         {
             Id(x => x.Id).GeneratedBy.Guid();
-            Map(x => x.Name);
-            Map(x => x.LastName);
+            Map(x => x.Imie);
+            Map(x => x.Nazwisko);
+            Map(x => x.NIP);
+            Map(x => x.REGON);
+            Map(x => x.Nazwa_firmy);
+            Map(x => x.Pan_Pani);
             Table(tablename);
         }
     }

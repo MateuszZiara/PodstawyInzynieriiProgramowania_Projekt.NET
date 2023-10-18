@@ -29,9 +29,12 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                         
+<<<<<<< HEAD
+=======
                         )
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
+>>>>>>> 3e660febfe2a420c2d14359d97f101c290917ef7
                         )
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
