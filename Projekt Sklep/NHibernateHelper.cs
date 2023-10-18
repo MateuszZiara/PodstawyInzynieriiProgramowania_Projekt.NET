@@ -2,6 +2,7 @@
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Tool.hbm2ddl;
+using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
 using System.Data.SqlClient;
 namespace Projekt_Sklep.Models
@@ -27,6 +28,10 @@ namespace Projekt_Sklep.Models
                         )
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
+                        
+                        )
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
                         )
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
