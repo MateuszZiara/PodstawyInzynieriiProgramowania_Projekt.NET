@@ -27,6 +27,7 @@ namespace Projekt_Sklep.Models
                         )
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
+                        
                         )
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
