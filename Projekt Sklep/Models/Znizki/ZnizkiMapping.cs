@@ -9,7 +9,6 @@ namespace Projekt_Sklep.Models.Znizki
         public ZnizkiMapping() 
         {
             Id(x => x.Id).GeneratedBy.Guid();
-            Map(x => x.Id);
             Map(x => x.Dorosly_dziecko);
             Map(x => x.Wiek);
             Table(tablename);
