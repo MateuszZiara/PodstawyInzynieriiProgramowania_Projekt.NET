@@ -16,6 +16,7 @@ namespace Projekt_Sklep.Models.Klient
             this.REGON = Regon;
             this.Nazwa_firmy = Nazwa_Firmy;
             this.Pan_Pani = Pan_Pani;
+            
         }
         [Required(ErrorMessage = "Pole \"Id\" jest wymagane.")]
         public virtual Guid Id { get; set; }
