@@ -6,6 +6,7 @@ using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Models.RodzajePolis;
 using Projekt_Sklep.Models.Znizki;
+using Projekt_Sklep.Models.WyplatyiSzkody;
 using System.Data.SqlClient;
 namespace Projekt_Sklep.Models
 {
@@ -41,10 +42,14 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Placowki.Placowki>()
                         )
-			 .Mappings(m =>
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>()
+                        )
+             .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>())
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
+
 
                 }
                 return _sessionFactory;
