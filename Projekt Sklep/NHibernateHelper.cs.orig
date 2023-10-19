@@ -4,6 +4,8 @@ using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Models.RodzajePolis;
+using Projekt_Sklep.Models.Znizki;
 using System.Data.SqlClient;
 namespace Projekt_Sklep.Models
 {
@@ -29,15 +31,26 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                         
-<<<<<<< HEAD
-=======
+                        )
+                      /*  .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
+                        )*/
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>()
                         )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
->>>>>>> 3e660febfe2a420c2d14359d97f101c290917ef7
+<<<<<<< HEAD
+                        m.FluentMappings.AddFromAssemblyOf<Placowki.Placowki>()
                         )
+
+=======
+                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>())
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>())
+>>>>>>> feature/RodzajePolis_PX-7
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
+
                 }
                 return _sessionFactory;
             }
