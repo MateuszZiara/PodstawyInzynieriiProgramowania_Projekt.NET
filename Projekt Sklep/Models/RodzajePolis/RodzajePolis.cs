@@ -7,7 +7,7 @@ namespace Projekt_Sklep.Models.RodzajePolis
 
         public RodzajePolis() : base() { }
 
-        public RodzajePolis(Guid Id, Enum Rodzaj, DateTime DataRozpoczecia, DateTime DataZakonczenia, int CenaPodstawowa)
+        public RodzajePolis(Guid Id, RodzajePolisEnum Rodzaj, DateTime DataRozpoczecia, DateTime DataZakonczenia, int CenaPodstawowa)
         {
             this.Id = Id;
             this.Rodzaj = Rodzaj;
@@ -18,7 +18,7 @@ namespace Projekt_Sklep.Models.RodzajePolis
 
 
         public virtual Guid Id { get; set; }
-        public virtual Enum Rodzaj { get; set; }
+        public virtual RodzajePolisEnum Rodzaj { get; set; }
         public virtual DateTime DataRozpoczecia { get; set; }
         public virtual DateTime DataZakonczenia { get; set; }
 

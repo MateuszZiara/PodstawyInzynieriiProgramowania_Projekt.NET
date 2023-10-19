@@ -1,7 +1,7 @@
 ﻿namespace Projekt_Sklep.Models.RodzajePolis
 {
     
-        enum RodzajePolisEnum
+        public enum RodzajePolisEnum
         {
             NaZycie,
             Pojazd,
