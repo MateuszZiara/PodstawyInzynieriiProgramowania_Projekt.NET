@@ -4,8 +4,8 @@ using Projekt_Sklep.Models.Klient;
 
 namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
 {
-    [Migration(202305101223)]
-    public class _202305101223_CreateTable_Klient : Migration
+    [Migration(202310182156)]
+    public class _202310182156_CreateTable_Klient : Migration
     {
         readonly string tableName = nameof(KlientEntity);
         public override void Up()
@@ -22,7 +22,7 @@ namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
                     .WithColumn(nameof(KlientEntity.NIP)).AsString().NotNullable()
                     .WithColumn("Adres").AsGuid().NotNullable();
                    // .WithColumn("PolisaID").AsGuid().NotNullable();
-                Create.ForeignKey("FK_Adres3").FromTable("KlientEntity").ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Adres3").FromTable(tableName).ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
                // Create.ForeignKey("FK_Polisa2").FromTable("KlientEntity").ForeignColumn("PolisaID").ToTable("Polisa").PrimaryColumn("Id");
                 // Moze byc walidacja z FK_Adres/FK_Polisa. Nadac numerki relacjom jak cos
                
