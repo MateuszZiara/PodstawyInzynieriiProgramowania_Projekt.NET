@@ -14,10 +14,16 @@ namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
             {
                 Create.Table(tableName)
                     .WithColumn(nameof(KlientEntity.Id)).AsGuid().NotNullable().PrimaryKey()
-                    .WithColumn(nameof(KlientEntity.Imie)).AsString().NotNullable()
-                    .WithColumn(nameof(KlientEntity.Nazwisko)).AsString().NotNullable();
-                   
-            }
+                    .WithColumn(nameof(KlientEntity.Name)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.LastName)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.Pesel)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.NumerTelefonu)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.Email)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.NIP)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.AdresID)).AsGuid().NotNullable()
+                    .WithColumn(nameof(KlientEntity.PolisaID)).AsGuid().NotNullable();
+
+    }
         }
         public override void Down()
         {
