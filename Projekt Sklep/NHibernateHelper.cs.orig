@@ -4,7 +4,6 @@ using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
-using Projekt_Sklep.Models.Znizki;
 using System.Data.SqlClient;
 namespace Projekt_Sklep.Models
 {
@@ -30,12 +29,13 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                         
+<<<<<<< HEAD
+=======
                         )
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
+>>>>>>> 3e660febfe2a420c2d14359d97f101c290917ef7
                         )
-                        .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>())
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
                 }
