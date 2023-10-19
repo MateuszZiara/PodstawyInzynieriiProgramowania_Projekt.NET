@@ -2,6 +2,7 @@
 using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Placowki;
+using System.Text.RegularExpressions;
 
 namespace Projekt_Sklep.Controllers.Placowki
 {
@@ -48,6 +49,18 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
+                        //TASK AX-14
+                        Regex regex = new Regex(@"^\d{3}-\d{3}-\d{2}-\d{2}$");
+                        Match match = regex.Match(placowki.NIP);
+                        if (match.Success)
+                        {
+                            
+                        }
+                        else
+                        {
+                            throw new ArgumentException();
+                        }
+                        //END OF TASK
                         session.Save(placowki);
                         transaction.Commit();
                         return CreatedAtAction(nameof(GetById), new { id = placowki.Id }, placowki);

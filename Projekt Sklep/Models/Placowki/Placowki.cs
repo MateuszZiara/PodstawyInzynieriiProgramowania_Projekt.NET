@@ -10,16 +10,7 @@ namespace Projekt_Sklep.Models.Placowki
         {
             this.Id = Id;
             this.NrPlacowki = NrPlacowki;
-            Regex regex = new Regex("^\\d{3}-\\d{3}-\\d{2}-\\d{2}$");
-            Match match = regex.Match(NIP);
-            if (match.Success)
-            {
-                this.NIP = NIP;
-            }
-            else
-            {
-                throw new ArgumentException();
-            }
+            this.NIP = NIP;
             this.Adres = Adres;
         }
 
