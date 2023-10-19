@@ -31,13 +31,19 @@ namespace Projekt_Sklep.Models
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                         
                         )
-                        .Mappings(m =>
+                      /*  .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
+                        )*/
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>()
                         )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>())
+                        m.FluentMappings.AddFromAssemblyOf<Placowki.Placowki>()
+                        )
+
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
+
                 }
                 return _sessionFactory;
             }
