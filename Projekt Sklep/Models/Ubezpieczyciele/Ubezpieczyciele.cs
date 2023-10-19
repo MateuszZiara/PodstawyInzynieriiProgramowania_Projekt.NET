@@ -11,7 +11,7 @@
             this.Phone = Phone;
             this.OsobaKontaktowa = OsobaKontaktowa;
             this.NazwaFirmy = NazwaFirmy;
-            this.Placowka = Placowka;
+            this.Placowki = Placowka;
         }
         public virtual Guid Id { get; set; }
         public virtual string Nazwisko { get; set; }
@@ -19,7 +19,7 @@
         public virtual string Phone { get; set; }
         public virtual string OsobaKontaktowa { get; set;}
         public virtual string NazwaFirmy { get; set;}
-        public virtual Guid Placowka { get; set;}
+        public virtual Guid Placowki { get; set;}
        
     }
 }

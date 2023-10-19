@@ -14,7 +14,7 @@ namespace Projekt_Sklep.Models.Ubezpieczyciele
             Map(x => x.Phone);
             Map(x => x.OsobaKontaktowa);
             Map(x => x.NazwaFirmy);
-            Map(x => x.Placowka);
+            Map(x => x.Placowki);
             Table(tablename);
         }
     }
