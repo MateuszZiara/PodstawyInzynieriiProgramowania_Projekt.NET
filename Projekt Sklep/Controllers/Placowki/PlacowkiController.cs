@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Models;
-using Projekt_Sklep.Persistence.Klient;
+using Projekt_Sklep.Persistence.Placowki;
 
 namespace Projekt_Sklep.Controllers.Placowki
 {
