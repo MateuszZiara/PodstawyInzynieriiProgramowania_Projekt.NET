@@ -17,7 +17,7 @@ namespace Projekt_Sklep.Models.Klient
             this.Email = Email;
             this.NIP = NIP;
             this.AdresID = AdresID;
-            this.PolisaID = PolisaID;
+            //this.PolisaID = PolisaID;
 
         }
         public virtual Guid Id { get; set; }
@@ -28,7 +28,7 @@ namespace Projekt_Sklep.Models.Klient
         public virtual string Email { get; set; }
         public virtual string NIP { get; set; }
         public virtual Guid AdresID  { get; set; }
-        public virtual Guid PolisaID { get; set; }
+       // public virtual Guid PolisaID { get; set; }
 
     }
 }

@@ -20,10 +20,14 @@ namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
                     .WithColumn(nameof(KlientEntity.NumerTelefonu)).AsString().NotNullable()
                     .WithColumn(nameof(KlientEntity.Email)).AsString().NotNullable()
                     .WithColumn(nameof(KlientEntity.NIP)).AsString().NotNullable()
-                    .WithColumn(nameof(KlientEntity.AdresID)).AsGuid().NotNullable()
-                    .WithColumn(nameof(KlientEntity.PolisaID)).AsGuid().NotNullable();
-
-    }
+                    .WithColumn("Adres").AsGuid().NotNullable();
+                   // .WithColumn("PolisaID").AsGuid().NotNullable();
+                Create.ForeignKey("FK_Adres3").FromTable("KlientEntity").ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
+               // Create.ForeignKey("FK_Polisa2").FromTable("KlientEntity").ForeignColumn("PolisaID").ToTable("Polisa").PrimaryColumn("Id");
+                // Moze byc walidacja z FK_Adres/FK_Polisa. Nadac numerki relacjom jak cos
+               
+            }
+        
         }
         public override void Down()
         {
