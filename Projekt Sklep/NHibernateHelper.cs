@@ -53,6 +53,8 @@ namespace Projekt_Sklep.Models
                         m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>())
                         .Mappings(m => 
                         m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>())
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Logi.Logi>())
 
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
