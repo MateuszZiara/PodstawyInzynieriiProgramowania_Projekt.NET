@@ -6,6 +6,7 @@ using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Models.RodzajePolis;
 using Projekt_Sklep.Models.Znizki;
+using Projekt_Sklep.Models.WyplatyiSzkody;
 using System.Data.SqlClient;
 namespace Projekt_Sklep.Models
 {
@@ -32,24 +33,32 @@ namespace Projekt_Sklep.Models
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                         
                         )
-                      /*  .Mappings(m =>
+                        .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
-                        )*/
+                        )
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>()
                         )
                         .Mappings(m =>
-<<<<<<< HEAD
                         m.FluentMappings.AddFromAssemblyOf<Placowki.Placowki>()
                         )
-
-=======
-                        m.FluentMappings.AddFromAssemblyOf<Znizki.Znizki>())
+<<<<<<< HEAD
                         .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>()
+                        )
+             .Mappings(m =>
+=======
+			            .Mappings(m =>
+>>>>>>> 9abefc7cec9e1d1399cf0db6c225fc77ecb29169
                         m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>())
->>>>>>> feature/RodzajePolis_PX-7
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Ubezpieczyciele.Ubezpieczyciele>())
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>())
+
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
+
 
                 }
                 return _sessionFactory;

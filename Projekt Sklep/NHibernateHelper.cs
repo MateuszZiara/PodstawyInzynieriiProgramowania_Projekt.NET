@@ -47,6 +47,11 @@ namespace Projekt_Sklep.Models
                         )
              .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>())
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Ubezpieczyciele.Ubezpieczyciele>())
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>())
+
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
 
