@@ -49,7 +49,7 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        IPlacowkiService placowkiService = new NIPCheck();
+                        IPlacowkiService placowkiService = new PlacowkiService();
                         placowkiService.NIPCheck(placowki.NIP);
                         session.Save(placowki);
                         transaction.Commit();

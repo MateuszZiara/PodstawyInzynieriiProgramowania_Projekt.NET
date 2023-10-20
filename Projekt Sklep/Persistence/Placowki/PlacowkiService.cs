@@ -1,9 +1,12 @@
-﻿using System.Text.RegularExpressions;
+﻿using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Models.Placowki;
+using System.Text.RegularExpressions;
 
-namespace Projekt_Sklep.Models.Placowki
+namespace Projekt_Sklep.Persistence.Placowki
 {
-    public class NIPCheck : IPlacowkiService
+    public class PlacowkiService : IPlacowkiService
     {
+        readonly PlacowkiRepository _entityRepository;
 
         void IPlacowkiService.NIPCheck(string NIP)
         {
