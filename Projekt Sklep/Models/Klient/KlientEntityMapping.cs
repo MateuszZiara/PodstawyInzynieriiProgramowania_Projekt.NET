@@ -14,7 +14,7 @@ namespace Projekt_Sklep.Models.Klient
             Map(x => x.NumerTelefonu);
             Map(x => x.Email);
             Map(x => x.NIP);
-            Map(x => x.AdresID);
+            Map(x => x.Adres);
        
             Table(tablename);
         }

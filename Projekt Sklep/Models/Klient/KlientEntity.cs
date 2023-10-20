@@ -16,7 +16,7 @@ namespace Projekt_Sklep.Models.Klient
             this.NumerTelefonu = NumerTelefonu;
             this.Email = Email;
             this.NIP = NIP;
-            this.AdresID = AdresID;
+            this.Adres = AdresID;
             
 
         }
@@ -27,7 +27,7 @@ namespace Projekt_Sklep.Models.Klient
         public virtual string NumerTelefonu { get; set; }
         public virtual string Email { get; set; }
         public virtual string NIP { get; set; }
-        public virtual Guid AdresID  { get; set; }
+        public virtual Guid Adres  { get; set; }
      
     }
 }

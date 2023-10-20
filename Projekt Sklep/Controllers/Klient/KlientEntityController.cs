@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Persistence.Klient;
+using System.ComponentModel.DataAnnotations;
 
 namespace Projekt_Sklep.Controllers.Klient
 {
@@ -10,7 +11,7 @@ namespace Projekt_Sklep.Controllers.Klient
     [ApiController]
     public class KlientEntityController : ControllerBase
     {
-        readonly KlientEntityService klientEntityService;
+        readonly KlientEntityService klientEntityService = new KlientEntityService();
         [HttpGet]
         public ActionResult<IEnumerable<KlientEntity>> GetAll()
         {
@@ -95,5 +96,20 @@ namespace Projekt_Sklep.Controllers.Klient
                 }
             }
         }
+        //Funkcje własne
+        [HttpPost("Edit/{id}")]
+        public bool EditKlientEntity(Guid id, string name = null, string lastname = null, string pesel = null, string numertelefonu = null, string email = null, string nip = null, Guid? AdresID = null)
+        {
+            Guid guid = Guid.NewGuid();
+            if (AdresID == null)
+            {
+                
+                guid = Guid.Empty;
+            }
+            else
+                guid = AdresID.Value;
+            return klientEntityService.edit(id, name, lastname, pesel, numertelefonu, email, nip, guid);
+        }
+
     }
 }
