@@ -4,14 +4,14 @@
     {
         public Roszczenia() : base() { }
 
-        public Roszczenia(Guid Id,string Opis,RoszczeniaEnum StanRoszczenia, Guid Ubezpieczyciele, Guid Klient, /*Guid Polisa,*/ Guid WyplatyiSzkody, byte[] Zalacznik)
+        public Roszczenia(Guid Id,string Opis,RoszczeniaEnum StanRoszczenia, Guid Ubezpieczyciele, Guid Klient, Guid Polisa, Guid WyplatyiSzkody, byte[] Zalacznik)
         {
             this.Id = Id;
             this.Opis = Opis;
             this.StanRoszczenia = StanRoszczenia;
             this.Ubezpieczyciele = Ubezpieczyciele;
             this.Klient = Klient;
-           // this.Polisa = Polisa;
+            this.Polisa = Polisa;
             this.WyplatyiSzkody = WyplatyiSzkody;
             this.Zalacznik = Zalacznik;
         }
@@ -21,7 +21,7 @@
         public virtual RoszczeniaEnum StanRoszczenia { get; set; }
         public virtual Guid Ubezpieczyciele { get; set; }
         public virtual Guid Klient { get; set; }
-        //public virtual Guid Polisa { get; set; }
+        public virtual Guid Polisa { get; set; }
         public virtual Guid WyplatyiSzkody { get; set; }
         public virtual byte[] Zalacznik { get; set; }
 

@@ -4,7 +4,7 @@
     {
         public Pojazdy() : base() { }
 
-        public Pojazdy(Guid Id, int NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony,/*Guid Polisa,*/ Guid Klient)
+        public Pojazdy(Guid Id, int NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
         {
             this.Id = Id;
             this.NrRejestracyjny = NrRejestracyjny;
@@ -13,7 +13,6 @@
             this.Rocznik = Rocznik;
             this.VIN = VIN;
             this.Uszkodzony = Uszkodzony;
-           // this.Polisa = Polisa;
             this.Klient = Klient;
         }
 
@@ -24,7 +23,6 @@
         public virtual int Rocznik { get; set; }
         public virtual string VIN { get; set; }
         public virtual bool Uszkodzony { get; set; }
-       // public virtual Guid Polisa { get; set; }
         public virtual Guid Klient { get; set; }
 
     }

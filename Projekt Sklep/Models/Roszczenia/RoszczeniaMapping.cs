@@ -14,7 +14,7 @@ namespace Projekt_Sklep.Models.Roszczenia
             Map(x => x.StanRoszczenia).CustomType<RoszczeniaEnum>();
             Map(x => x.Ubezpieczyciele);
             Map(x => x.Klient);
-            //Map(x => x.Polisa);
+            Map(x => x.Polisa);
             Map(x => x.WyplatyiSzkody);
             Map(x => x.Zalacznik);
             Table(tablename);
