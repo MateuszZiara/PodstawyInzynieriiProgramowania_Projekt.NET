@@ -28,7 +28,6 @@ namespace Projekt_Sklep.Models.Klient
         public virtual string Email { get; set; }
         public virtual string NIP { get; set; }
         public virtual Guid AdresID  { get; set; }
-        public virtual Guid PolisaID { get; set; }
      
     }
 }
