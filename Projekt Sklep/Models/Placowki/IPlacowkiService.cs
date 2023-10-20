@@ -2,5 +2,6 @@
 {
     public interface IPlacowkiService
     {
+        void NIPCheck(string NIP);
     }
 }

@@ -4,42 +4,42 @@ using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Placowki;
 using System.Text.RegularExpressions;
 
-namespace Projekt_Sklep.Controllers.Placowki
+namespace Projekt_Sklep.Controllers.Roszczenia
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PlacowkiController : ControllerBase
+    public class RoszczeniaController : ControllerBase
     {
 
         [HttpGet]
-        public ActionResult<IEnumerable<Models.Placowki.Placowki>> GetAll()
+        public ActionResult<IEnumerable<Models.Roszczenia.Roszczenia>> GetAll()
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntities = session.Query<Models.Placowki.Placowki>().ToList();
-                return Ok(klientEntities);
+                var roszczeniaEntities = session.Query<Models.Roszczenia.Roszczenia>().ToList();
+                return Ok(roszczeniaEntities);
             }
         }
         [HttpGet("{id}")]
-        public ActionResult<Models.Placowki.Placowki> GetById(Guid id)
+        public ActionResult<Models.Roszczenia.Roszczenia> GetById(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntity = session.Get<Models.Placowki.Placowki>(id);
+                var roszczeniaEntity = session.Get<Models.Roszczenia.Roszczenia>(id);
 
-                if (klientEntity == null)
+                if (roszczeniaEntity == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(klientEntity);
+                return Ok(roszczeniaEntity);
             }
 
         }
         [HttpPost]
-        public ActionResult<Models.Placowki.Placowki> CreatePlacowkiEntity([FromBody] Models.Placowki.Placowki placowki)
+        public ActionResult<Models.Roszczenia.Roszczenia> CreateRoszczeniaEntity([FromBody] Models.Roszczenia.Roszczenia roszczenia)
         {
-            if (placowki == null)
+            if (roszczenia == null)
             {
                 return BadRequest("Invalid data");
             }
@@ -49,11 +49,21 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        IPlacowkiService placowkiService = new NIPCheck();
-                        placowkiService.NIPCheck(placowki.NIP);
-                        session.Save(placowki);
+                        /*//TASK AX-14
+                        Regex regex = new Regex(@"^\d{3}-\d{3}-\d{2}-\d{2}$");
+                        Match match = regex.Match(placowki.NIP);
+                        if (match.Success)
+                        {
+
+                        }
+                        else
+                        {
+                            throw new ArgumentException();
+                        }
+                        //END OF TASK*/
+                        session.Save(roszczenia);
                         transaction.Commit();
-                        return CreatedAtAction(nameof(GetById), new { id = placowki.Id }, placowki);
+                        return CreatedAtAction(nameof(GetById), new { id = roszczenia.Id }, roszczenia);
                     }
                     catch (Exception ex)
                     {
@@ -65,7 +75,7 @@ namespace Projekt_Sklep.Controllers.Placowki
 
         }
         [HttpDelete("{id}")]
-        public ActionResult DeletePlacowki(Guid id)
+        public ActionResult DeleteRoszczenia(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
@@ -73,15 +83,15 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        var placowki = session.Get<Models.Placowki.Placowki>(id);
+                        var roszczenia = session.Get<Models.Roszczenia.Roszczenia>(id);
 
-                        if (placowki == null)
+                        if (roszczenia == null)
                         {
                             return NotFound();
                         }
 
 
-                        session.Delete(placowki);
+                        session.Delete(roszczenia);
 
 
                         transaction.Commit();
@@ -98,5 +108,4 @@ namespace Projekt_Sklep.Controllers.Placowki
             }
         }
     }
-
 }
