@@ -1,7 +1,4 @@
-﻿using NHibernate.Linq.Visitors;
-using System.ComponentModel.DataAnnotations;
-
-namespace Projekt_Sklep.Models.Klient
+﻿namespace Projekt_Sklep.Models.Klient
 {
     public class KlientEntity
     {
