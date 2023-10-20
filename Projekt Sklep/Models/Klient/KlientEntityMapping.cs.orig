@@ -15,7 +15,11 @@ namespace Projekt_Sklep.Models.Klient
             Map(x => x.Email);
             Map(x => x.NIP);
             Map(x => x.AdresID);
+<<<<<<< HEAD
+            Map(x => x.PolisaID);
+=======
          //   Map(x => x.PolisaID);
+>>>>>>> feature/KlientPX
             Table(tablename);
         }
     }

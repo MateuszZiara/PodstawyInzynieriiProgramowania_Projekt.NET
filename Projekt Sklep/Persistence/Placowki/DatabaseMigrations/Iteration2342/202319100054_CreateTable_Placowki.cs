@@ -17,7 +17,7 @@ namespace Projekt_Sklep.Persistence.Placowki.DatabaseMigrations.Iteration2342
                     .WithColumn(nameof(Models.Placowki.Placowki.Id)).AsGuid().NotNullable().PrimaryKey()
                     .WithColumn(nameof(Models.Placowki.Placowki.NIP)).AsString().Nullable()
                     .WithColumn("Adres").AsGuid().NotNullable();
-                Create.ForeignKey("FK_Adres").FromTable("Placowki").ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Adres2").FromTable("Placowki").ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
             }
         }
 
