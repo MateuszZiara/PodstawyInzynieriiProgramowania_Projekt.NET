@@ -15,15 +15,10 @@ namespace Projekt_Sklep.Models.Klient
                         return false;
                     foreach (var entity in query)
                     {
-                        Console.WriteLine(entity.Id);
-                        Console.WriteLine(entity.Name);
+                    
                         if (name != null)
                         {
                             entity.Name = name;
-                            Console.WriteLine(name);
-                        }
-                        Console.WriteLine(entity.Name);
-
                         if (lastname != null)
                             entity.LastName = lastname;
 
