@@ -18,11 +18,10 @@ namespace Projekt_Sklep.Persistence.Logi.DatabaseMigrations.Iteration404
                     .WithColumn(nameof(Models.Logi.Logi.OpisZdarzenia)).AsString().Nullable()
                     .WithColumn("Klient").AsGuid().NotNullable()
                     .WithColumn("WyplatyiSzkody").AsGuid().NotNullable()
-                    .WithColumn("Ubezpieczyciele").AsGuid().NotNullable();
+                    .WithColumn("Ubezpieczyciele").AsGuid().NotNullable()
+                    .WithColumn("Polisa").AsGuid().NotNullable();
 
-                //.WithColumn("Polisa").AsGuid().NotNullable();
-
-                // Create.ForeignKey("FK_Polisa").FromTable("Logi").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Polisa2").FromTable("Logi").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
                 Create.ForeignKey("FK_Kilent4").FromTable("Logi").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
                 Create.ForeignKey("FK_WyplatyiSzkody").FromTable("Logi").ForeignColumn("WyplatyiSzkody").ToTable("WyplatyiSzkody").PrimaryColumn("Id");
                 Create.ForeignKey("FK_Ubezpieczyciele").FromTable("Logi").ForeignColumn("Ubezpieczyciele").ToTable("Ubezpieczyciele").PrimaryColumn("Id");

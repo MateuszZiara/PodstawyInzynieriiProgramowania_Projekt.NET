@@ -14,6 +14,7 @@ namespace Projekt_Sklep.Models.Logi
             Map(x => x.DataZdarzenia);
             Map(x => x.OpisZdarzenia);
             Map(x => x.Klient);
+            Map(x => x.Polisa);
             Map(x => x.WyplataiSzkoda);
             Map(x => x.Ubezpieczyciele);
             Table(tablename);
