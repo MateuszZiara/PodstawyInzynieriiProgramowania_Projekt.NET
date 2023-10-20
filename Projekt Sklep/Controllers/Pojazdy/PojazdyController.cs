@@ -4,6 +4,7 @@ using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Pojazdy;
 using System.Text.RegularExpressions;
 using Projekt_Sklep.Models.Placowki;
+using Projekt_Sklep.Persistence.Placowki;
 
 namespace Projekt_Sklep.Controllers.Pojazdy
 {
@@ -50,8 +51,8 @@ namespace Projekt_Sklep.Controllers.Pojazdy
                 {
                     try
                     {
-                        IPojazdyService pojazdyService = new VINCheck();
-                        pojazdyService.VINCheck(pojazdy.VIN);
+                        IPojazdyService pojazdyServices = new PojazdyService();
+                        pojazdyServices.VINCheck(pojazdy.VIN);
                         session.Save(pojazdy);
                         transaction.Commit();
                         return CreatedAtAction(nameof(GetById), new { id = pojazdy.Id }, pojazdy);
