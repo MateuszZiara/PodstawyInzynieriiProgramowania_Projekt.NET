@@ -8,6 +8,8 @@ using Projekt_Sklep.Models.RodzajePolis;
 using Projekt_Sklep.Models.Znizki;
 using Projekt_Sklep.Models.WyplatyiSzkody;
 using System.Data.SqlClient;
+using Projekt_Sklep.Models.Roszczenia;
+
 namespace Projekt_Sklep.Models
 {
     public class NHibernateHelper
@@ -31,7 +33,6 @@ namespace Projekt_Sklep.Models
                         )
                         .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
-                        
                         )
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Adres.Adres>()
@@ -46,15 +47,24 @@ namespace Projekt_Sklep.Models
                         m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>()
                         )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>())
+                        m.FluentMappings.AddFromAssemblyOf<RodzajePolis.RodzajePolis>().Conventions.AddFromAssemblyOf<RodzajePolisEnum>()
+                        )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Ubezpieczyciele.Ubezpieczyciele>())
+                        m.FluentMappings.AddFromAssemblyOf<Ubezpieczyciele.Ubezpieczyciele>()
+                        )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>())
+                        m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>()
+                        )
                         .Mappings(m => 
-                        m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>())
+                        m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>()
+                        )
                         .Mappings(m =>
-                        m.FluentMappings.AddFromAssemblyOf<Logi.Logi>())
+                        m.FluentMappings.AddFromAssemblyOf<Logi.Logi>()
+                        )
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Roszczenia.Roszczenia>().Conventions.AddFromAssemblyOf<RoszczeniaEnum>()
+                        )
+
 
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();

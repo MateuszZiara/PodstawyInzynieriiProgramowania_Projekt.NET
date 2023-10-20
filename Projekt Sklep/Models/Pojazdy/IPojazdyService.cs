@@ -2,5 +2,6 @@
 {
     public interface IPojazdyService
     {
+        void VINCheck(string VIN);
     }
 }

@@ -37,7 +37,7 @@ namespace Projekt_Sklep.Controllers.Placowki
 
         }
         [HttpPost]
-        public ActionResult<Models.Placowki.Placowki> CreateKlientEntity([FromBody] Models.Placowki.Placowki placowki)
+        public ActionResult<Models.Placowki.Placowki> CreatePlacowkiEntity([FromBody] Models.Placowki.Placowki placowki)
         {
             if (placowki == null)
             {
@@ -49,18 +49,8 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        //TASK AX-14
-                        Regex regex = new Regex(@"^\d{3}-\d{3}-\d{2}-\d{2}$");
-                        Match match = regex.Match(placowki.NIP);
-                        if (match.Success)
-                        {
-                            
-                        }
-                        else
-                        {
-                            throw new ArgumentException();
-                        }
-                        //END OF TASK
+                        IPlacowkiService placowkiService = new NIPCheck();
+                        placowkiService.NIPCheck(placowki.NIP);
                         session.Save(placowki);
                         transaction.Commit();
                         return CreatedAtAction(nameof(GetById), new { id = placowki.Id }, placowki);

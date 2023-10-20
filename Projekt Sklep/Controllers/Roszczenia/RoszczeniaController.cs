@@ -1,46 +1,45 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Projekt_Sklep.Models.Pojazdy;
-using Projekt_Sklep.Models;
-using Projekt_Sklep.Persistence.Pojazdy;
-using System.Text.RegularExpressions;
 using Projekt_Sklep.Models.Placowki;
+using Projekt_Sklep.Models;
+using Projekt_Sklep.Persistence.Placowki;
+using System.Text.RegularExpressions;
 
-namespace Projekt_Sklep.Controllers.Pojazdy
+namespace Projekt_Sklep.Controllers.Roszczenia
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PojazdyController : ControllerBase
+    public class RoszczeniaController : ControllerBase
     {
 
         [HttpGet]
-        public ActionResult<IEnumerable<Models.Pojazdy.Pojazdy>> GetAll()
+        public ActionResult<IEnumerable<Models.Roszczenia.Roszczenia>> GetAll()
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntities = session.Query<Models.Pojazdy.Pojazdy>().ToList();
-                return Ok(klientEntities);
+                var roszczeniaEntities = session.Query<Models.Roszczenia.Roszczenia>().ToList();
+                return Ok(roszczeniaEntities);
             }
         }
         [HttpGet("{id}")]
-        public ActionResult<Models.Pojazdy.Pojazdy> GetById(Guid id)
+        public ActionResult<Models.Roszczenia.Roszczenia> GetById(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntity = session.Get<Models.Pojazdy.Pojazdy>(id);
+                var roszczeniaEntity = session.Get<Models.Roszczenia.Roszczenia>(id);
 
-                if (klientEntity == null)
+                if (roszczeniaEntity == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(klientEntity);
+                return Ok(roszczeniaEntity);
             }
 
         }
         [HttpPost]
-        public ActionResult<Models.Pojazdy.Pojazdy> CreateKlientEntity([FromBody] Models.Pojazdy.Pojazdy pojazdy)
+        public ActionResult<Models.Roszczenia.Roszczenia> CreateRoszczeniaEntity([FromBody] Models.Roszczenia.Roszczenia roszczenia)
         {
-            if (pojazdy == null)
+            if (roszczenia == null)
             {
                 return BadRequest("Invalid data");
             }
@@ -50,11 +49,21 @@ namespace Projekt_Sklep.Controllers.Pojazdy
                 {
                     try
                     {
-                        IPojazdyService pojazdyService = new VINCheck();
-                        pojazdyService.VINCheck(pojazdy.VIN);
-                        session.Save(pojazdy);
+                        /*//TASK AX-14
+                        Regex regex = new Regex(@"^\d{3}-\d{3}-\d{2}-\d{2}$");
+                        Match match = regex.Match(placowki.NIP);
+                        if (match.Success)
+                        {
+
+                        }
+                        else
+                        {
+                            throw new ArgumentException();
+                        }
+                        //END OF TASK*/
+                        session.Save(roszczenia);
                         transaction.Commit();
-                        return CreatedAtAction(nameof(GetById), new { id = pojazdy.Id }, pojazdy);
+                        return CreatedAtAction(nameof(GetById), new { id = roszczenia.Id }, roszczenia);
                     }
                     catch (Exception ex)
                     {
@@ -66,7 +75,7 @@ namespace Projekt_Sklep.Controllers.Pojazdy
 
         }
         [HttpDelete("{id}")]
-        public ActionResult DeletePojazdy(Guid id)
+        public ActionResult DeleteRoszczenia(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
@@ -74,15 +83,15 @@ namespace Projekt_Sklep.Controllers.Pojazdy
                 {
                     try
                     {
-                        var pojazdy = session.Get<Models.Pojazdy.Pojazdy>(id);
+                        var roszczenia = session.Get<Models.Roszczenia.Roszczenia>(id);
 
-                        if (pojazdy == null)
+                        if (roszczenia == null)
                         {
                             return NotFound();
                         }
 
 
-                        session.Delete(pojazdy);
+                        session.Delete(roszczenia);
 
 
                         transaction.Commit();
@@ -99,5 +108,4 @@ namespace Projekt_Sklep.Controllers.Pojazdy
             }
         }
     }
-
 }
