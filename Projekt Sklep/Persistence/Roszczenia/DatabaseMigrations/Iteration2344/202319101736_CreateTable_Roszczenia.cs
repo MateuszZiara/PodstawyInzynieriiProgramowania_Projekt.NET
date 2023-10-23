@@ -21,7 +21,7 @@ namespace Projekt_Sklep.Persistence.Roszczenia.DatabaseMigrations.Iteration2344
                     .WithColumn("WyplatyiSzkody").AsGuid().NotNullable();
                 Create.ForeignKey("FK_Ubezpieczyciele2").FromTable("Roszczenia").ForeignColumn("Ubezpieczyciele").ToTable("Ubezpieczyciele").PrimaryColumn("Id");
                 Create.ForeignKey("FK_Klient4").FromTable("Roszczenia").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
-                Create.ForeignKey("FK_Polisa99").FromTable("Roszczenia").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Polisa99").FromTable("Roszczenia").ForeignColumn("Polisa").ToTable("Polisy").PrimaryColumn("Id");
                 Create.ForeignKey("FK_WyplatyiSzkody2").FromTable("Roszczenia").ForeignColumn("WyplatyiSzkody").ToTable("WyplatyiSzkody").PrimaryColumn("Id");
             }
         }

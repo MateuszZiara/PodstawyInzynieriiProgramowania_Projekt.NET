@@ -11,7 +11,7 @@ namespace Projekt_Sklep.Controllers.Adres
     [ApiController]
     public class AdresController : ControllerBase
     {
-        readonly AdresService adresService;
+        readonly AdresService adresService = new AdresService();
 
         [HttpGet]
         public ActionResult<IEnumerable<Models.Adres.Adres>> GetAll()
@@ -95,6 +95,13 @@ namespace Projekt_Sklep.Controllers.Adres
                     }
                 }
             }
+        }
+        //Funkcje własne
+        [HttpPost("Edit/{id}")]
+        public bool EditKlientEntity(Guid id, string kodPocztowy = null, string miasto = null, string wojewodztwo = null, string panstwo = null)
+        {
+           
+            return adresService.edit(id, kodPocztowy, miasto, wojewodztwo, panstwo);
         }
     }
 }

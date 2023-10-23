@@ -17,8 +17,8 @@ namespace Projekt_Sklep.Models.Klient
                     {
                     
                         if (name != null)
-                        {
                             entity.Name = name;
+
                         if (lastname != null)
                             entity.LastName = lastname;
 
@@ -48,3 +48,4 @@ namespace Projekt_Sklep.Models.Klient
         }
     }
 }
+

@@ -4,7 +4,7 @@ using Projekt_Sklep.Models.Klient;
 
 namespace Projekt_Sklep.Persistence.Polisy.DatabaseMigrations.Iteration2345
 {
-    [Migration(202321100005)]
+    [Migration(202318100005)]
     public class _202321100005_CreateTable_Polisy : Migration
     {
         readonly string tableName = nameof(Models.Polisy.Polisy);
