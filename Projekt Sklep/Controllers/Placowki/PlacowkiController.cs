@@ -101,7 +101,7 @@ namespace Projekt_Sklep.Controllers.Placowki
         }
 
         //Funkcje własne
-        [HttpPost("Edit/{id}")]
+        [HttpPost("Edit/{Id}")]
         public bool EditPlacowki(Guid Id, int NrPlacowki = -1, string NIP = null, Guid? Adres = null)
         {
             Guid guid = Guid.NewGuid();
