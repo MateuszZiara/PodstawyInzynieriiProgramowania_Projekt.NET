@@ -3,6 +3,7 @@ using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Placowki;
 using System.Text.RegularExpressions;
+using Projekt_Sklep.Persistence.Klient;
 
 namespace Projekt_Sklep.Controllers.Placowki
 {
@@ -10,6 +11,7 @@ namespace Projekt_Sklep.Controllers.Placowki
     [ApiController]
     public class PlacowkiController : ControllerBase
     {
+        readonly PlacowkiService PlacowkiService = new PlacowkiService();
 
         [HttpGet]
         public ActionResult<IEnumerable<Models.Placowki.Placowki>> GetAll()
@@ -97,6 +99,24 @@ namespace Projekt_Sklep.Controllers.Placowki
                 }
             }
         }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditPlacowki(Guid Id, int NrPlacowki = -1, string NIP = null, Guid? Adres = null)
+        {
+            Guid guid = Guid.NewGuid();
+            if (Adres == null)
+            {
+
+                guid = Guid.Empty;
+            }
+            else
+                guid = Adres.Value;
+            return PlacowkiService.edit(Id, NrPlacowki, NIP, guid);
+          
+        }
+
+
     }
 
 }
