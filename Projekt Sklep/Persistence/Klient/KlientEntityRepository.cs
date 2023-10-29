@@ -46,6 +46,20 @@ namespace Projekt_Sklep.Models.Klient
             
             return true;
         }
+
+        public (List<Polisy.Polisy>, List<Pojazdy.Pojazdy>) getByPolisaPojazd(Guid Id)
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var query = session.Query<Polisy.Polisy>().Where(x => x.Klient == Id).ToList();
+                    var query2 = session.Query<Pojazdy.Pojazdy>().Where(x => x.Klient == Id).ToList();
+                    return (query, query2);
+                }
+            }
+                
+        }
     }
 }
 

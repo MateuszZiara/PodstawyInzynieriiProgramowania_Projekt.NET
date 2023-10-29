@@ -12,5 +12,10 @@ namespace Projekt_Sklep.Persistence.Klient
         {
             return _entityRepository.edit(id,AdresID, name, lastname, pesel, numertelefonu, email, nip);
         }
+
+        public (List<Models.Polisy.Polisy>, List<Models.Pojazdy.Pojazdy>) getByPolisaPojazd(Guid Id)
+        {
+            return _entityRepository.getByPolisaPojazd(Id);
+        }
     }
 }

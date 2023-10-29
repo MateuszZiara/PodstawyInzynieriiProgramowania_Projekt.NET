@@ -50,12 +50,12 @@ namespace Projekt_Sklep.Controllers.Klient
                 {
                     try
                     {
-                       session.Save(klientEntity); 
+                        session.Save(klientEntity);
                         transaction.Commit();
                         return CreatedAtAction(nameof(GetById), new { id = klientEntity.Id }, klientEntity);
                     }
                     catch (Exception ex)
-                    {  
+                    {
                         transaction.Rollback();
                         return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
                     }
@@ -79,17 +79,17 @@ namespace Projekt_Sklep.Controllers.Klient
                             return NotFound();
                         }
 
-                      
+
                         session.Delete(klientEntity);
 
-                       
+
                         transaction.Commit();
 
-                        return NoContent(); 
+                        return NoContent();
                     }
                     catch (Exception ex)
                     {
-                       
+
                         transaction.Rollback();
                         return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
                     }
@@ -103,12 +103,23 @@ namespace Projekt_Sklep.Controllers.Klient
             Guid guid = Guid.NewGuid();
             if (AdresID == null)
             {
-                
+
                 guid = Guid.Empty;
             }
             else
                 guid = AdresID.Value;
             return klientEntityService.edit(id, name, lastname, pesel, numertelefonu, email, nip, guid);
+        }
+        [HttpGet("getByPolisaPojazd/{Id}")]
+        public ActionResult<PolisyPojazdyResponse> getByPolisaPojazd(Guid Id)
+        {
+            var result = klientEntityService.getByPolisaPojazd(Id);
+            var response = new PolisyPojazdyResponse
+            {
+                PolisyList = result.Item1,
+                PojazdyList = result.Item2
+            };
+            return Ok(response);
         }
 
     }
