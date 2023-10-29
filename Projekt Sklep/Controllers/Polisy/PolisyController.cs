@@ -9,7 +9,7 @@ namespace Projekt_Sklep.Controllers.Polisy
     [ApiController]
     public class PolisyController : ControllerBase
     {
-
+        readonly PolisyService polisyService = new PolisyService();
         [HttpGet]
         public ActionResult<IEnumerable<Models.Polisy.Polisy>> GetAll()
         {
@@ -93,6 +93,11 @@ namespace Projekt_Sklep.Controllers.Polisy
                     }
                 }
             }
+        }
+        [HttpGet("czyAktywna/{id}")]
+        public bool czyAktywna(Guid id)
+        {
+            return polisyService.czyAktywna(id);
         }
     }
 

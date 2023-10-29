@@ -2,5 +2,6 @@
 {
     public interface IPolisyService
     {
+        public bool czyAktywna(Guid Id);
     }
 }
