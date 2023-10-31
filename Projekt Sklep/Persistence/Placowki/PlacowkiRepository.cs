@@ -40,5 +40,22 @@ namespace Projekt_Sklep.Persistence.Placowki
             return true;
         }
 
+        public (List<Ubezpieczyciele.Ubezpieczyciele>, List<Polisy.Polisy>, List<Pojazdy.Pojazdy>, List<Klient.KlientEntity>) getByAgenciPolisyPojazdyOsoby(Guid Id)
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var query = session.Query<Ubezpieczyciele.Ubezpieczyciele>().Where(x => x.Placowka == Id).ToList();
+                    var query2 = session.Query<Polisy.Polisy>().Where(x => x.Klient == Id).ToList();
+                    var query3 = session.Query<Pojazdy.Pojazdy>().Where(x => x.Klient == Id).ToList();
+                    var query4 = session.Query<Klient.KlientEntity>().Where(x => x.AdresID == Id).ToList();
+
+                    return (query, query2, query3, query4);
+                }
+            }
+
+        }
+
     }
 }
