@@ -4,6 +4,7 @@ using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Placowki;
 using System.Text.RegularExpressions;
 using Projekt_Sklep.Persistence.Klient;
+using Projekt_Sklep.Models.Klient;
 
 namespace Projekt_Sklep.Controllers.Placowki
 {
@@ -114,6 +115,20 @@ namespace Projekt_Sklep.Controllers.Placowki
                 guid = Adres.Value;
             return PlacowkiService.edit(Id, NrPlacowki, NIP, guid);
           
+        }
+
+        [HttpGet("getByAgenciPolisyPojazdyOsoby/{Id}")]
+        public ActionResult<AgenciPolisyPojazdyOsobyResponse> getByAgenciPolisyPojazdyOsoby(Guid Id)
+        {
+            var result = PlacowkiService.getByAgenciPolisyPojazdyOsoby(Id);
+            var response = new AgenciPolisyPojazdyOsobyResponse
+            {
+                UbezpieczycieleList = result.Item1,
+                PolisyList = result.Item2,
+                PojazdyList = result.Item3,
+                KlientList = result.Item4
+            };
+            return Ok(response);
         }
 
 

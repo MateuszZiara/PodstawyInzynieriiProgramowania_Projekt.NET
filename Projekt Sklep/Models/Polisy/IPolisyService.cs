@@ -1,7 +1,8 @@
-﻿namespace Projekt_Sklep.Models.Polisy
+﻿namespace Projekt_Sklep.Models;
+
+public interface IPolisyService
 {
-    public interface IPolisyService
-    {
-        public bool czyAktywna(Guid Id);
-    }
+    public bool czyAktywna(Guid Id);
+
+    
 }

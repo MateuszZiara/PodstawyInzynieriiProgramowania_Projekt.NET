@@ -1,5 +1,6 @@
 ﻿using Projekt_Sklep.Models;
 using Projekt_Sklep.Models.Polisy;
+using NHibernate.Linq;
 
 namespace Projekt_Sklep.Persistence.Polisy
 {
@@ -19,5 +20,7 @@ namespace Projekt_Sklep.Persistence.Polisy
                 }
             }
         }
+
+        
     }
 }
