@@ -40,18 +40,45 @@ namespace Projekt_Sklep.Persistence.Placowki
             return true;
         }
 
-        public (List<Ubezpieczyciele.Ubezpieczyciele>, List<Polisy.Polisy>, List<Pojazdy.Pojazdy>, List<Klient.KlientEntity>) getByAgenciPolisyPojazdyOsoby(Guid Id)
+        public (List<Models.Ubezpieczyciele.Ubezpieczyciele>, List<Models.Polisy.Polisy>, List<Models.Pojazdy.Pojazdy>, List<Models.Klient.KlientEntity>) getByAgenciPolisyPojazdyOsoby(Guid Id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    var query = session.Query<Ubezpieczyciele.Ubezpieczyciele>().Where(x => x.Placowka == Id).ToList();
-                    var query2 = session.Query<Polisy.Polisy>().Where(x => x.Klient == Id).ToList();
-                    var query3 = session.Query<Pojazdy.Pojazdy>().Where(x => x.Klient == Id).ToList();
-                    var query4 = session.Query<Klient.KlientEntity>().Where(x => x.AdresID == Id).ToList();
+                    var ubezpieczycieleQuery = session.Query<Models.Ubezpieczyciele.Ubezpieczyciele>().Where(x => x.Placowki == Id).ToList();
+                    List<Models.Polisy.Polisy> listaPolis = new List<Models.Polisy.Polisy>();
+                    var polisyQuery = session.Query<Models.Polisy.Polisy>();
+                    foreach (var model in ubezpieczycieleQuery)
+                    {
+                        var filtr = polisyQuery.Where(x => x.Ubezpieczyciele == model.Id)
+                           .ToList();
+                        listaPolis.AddRange(filtr);
+                    }
+                   
+                    List<Models.Klient.KlientEntity> klientList = new List<Models.Klient.KlientEntity>();
+                    var klientQuery = session.Query<Models.Klient.KlientEntity>();
+                    foreach(var model in listaPolis)
+                    {
+                        var filtr = klientQuery.Where(x => x.Id == model.Klient).ToList();
+                        klientList.AddRange(filtr);
+                    }
+                    List<Models.Pojazdy.Pojazdy> pojazdyList = new List<Models.Pojazdy.Pojazdy>();
+                    var pojazdyQuery = session.Query<Models.Pojazdy.Pojazdy>();
+                    foreach(var model in klientList)
+                    {
+                        var filtr = pojazdyQuery.Where(x => x.Klient == model.Id);
+                        
+                        pojazdyList.AddRange(filtr);
+                    }
 
-                    return (query, query2, query3, query4);
+                    
+                   // var query2 = session.Query<Models.Polisy.Polisy>().Where(x => x.Klient == Id).ToList();
+       
+                    //var query3 = session.Query<Models.Pojazdy.Pojazdy>().Where(x => x.Klient == Id).ToList();
+                   // var query4 = session.Query<Models.Klient.KlientEntity>().Where(x => x.Id == Id).ToList();
+                    
+                    return (ubezpieczycieleQuery, listaPolis.Distinct().ToList(), pojazdyList.Distinct().ToList(), klientList.Distinct().ToList());
                 }
             }
 

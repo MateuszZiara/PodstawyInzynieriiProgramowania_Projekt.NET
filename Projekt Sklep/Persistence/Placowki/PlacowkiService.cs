@@ -28,7 +28,7 @@ namespace Projekt_Sklep.Persistence.Placowki
             return _entityRepository.edit(Id, NrPlacowki, NIP, Adres);
         }
 
-        public (List<Ubezpieczyciele.Ubezpieczyciele>, List<Polisy.Polisy>, List<Pojazdy.Pojazdy>, List<Klient.Klient>) getByAgenciPolisyPojazdyOsoby(Guid Id)
+        public (List<Models.Ubezpieczyciele.Ubezpieczyciele>, List<Models.Polisy.Polisy>, List<Models.Pojazdy.Pojazdy>, List<Models.Klient.KlientEntity>) getByAgenciPolisyPojazdyOsoby(Guid Id)
         {
             return _entityRepository.getByAgenciPolisyPojazdyOsoby(Id);
         }
