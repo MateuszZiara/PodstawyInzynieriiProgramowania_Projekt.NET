@@ -1,5 +1,6 @@
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
+using Projekt_Sklep.Controllers.Adres;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddRazorPages();
+builder.Services.AddScoped<AdresController>();
 // Configure FluentMigrator within ConfigureServices
 builder.Services.AddFluentMigratorCore()
                .ConfigureRunner(c =>
@@ -28,12 +30,18 @@ migrator.MigrateUp();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+     app.UseSwaggerUI();
+   app.UseDeveloperExceptionPage();
 }
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+   endpoints.MapRazorPages();
+});
 app.Run();
 
 
