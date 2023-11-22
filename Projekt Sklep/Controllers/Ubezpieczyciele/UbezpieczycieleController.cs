@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Projekt_Sklep.Models;
+using Projekt_Sklep.Models.Ubezpieczyciele;
+using Projekt_Sklep.Persistence.Placowki;
+using Projekt_Sklep.Persistence.Ubezpieczyciele;
 
 namespace Projekt_Sklep.Controllers.Ubezpieczyciele
 {
@@ -7,6 +10,9 @@ namespace Projekt_Sklep.Controllers.Ubezpieczyciele
     [ApiController]
     public class UbezpieczycieleController : ControllerBase
     {
+
+        UbezpieczycieleService ubezpieczycieleService = new UbezpieczycieleService();
+
         [HttpGet]
         public ActionResult<IEnumerable<Models.Ubezpieczyciele.Ubezpieczyciele>> GetAll()
         {
@@ -91,5 +97,22 @@ namespace Projekt_Sklep.Controllers.Ubezpieczyciele
                 }
             }
         }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditUbezpieczyciele(Guid Id, string Nazwisko = null, string Email = null, string Phone = null, string OsobaKontaktowa = null, string NazwaFirmy = null, Guid? Placowki = null)
+        {
+            Guid guid = Guid.NewGuid();
+            if (Placowki == null)
+            {
+
+                guid = Guid.Empty;
+            }
+            else
+                guid = Placowki.Value;
+            return ubezpieczycieleService.edit(Id, Nazwisko, Email, Phone, OsobaKontaktowa, NazwaFirmy, guid);
+
+        }
+
     }
 }
