@@ -1,13 +1,12 @@
-﻿using FluentMigrator;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Projekt_Sklep.Models.Klient;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using FluentMigrator;
 
-namespace Projekt_Sklep.Persistence.Pojazdy.DatabaseMigrations.Iteration420
+namespace Projekt_Sklep.Persistence.Wiadomosci.DatabaseMigrations.Iteration2347
 {
-    [Migration(202319101408)]
-    public class _202319101408_CreateTable_Pojazdy : Migration
+    [Migration(202325100332)]
+    public class _202325100332_CreateTable_Wiadomosci : Migration
     {
-         readonly string tableName = nameof(Models.Pojazdy.Pojazdy);
+        readonly string tableName = nameof(Models.Wiadomosci.Wiadomosci);
         public override void Up()
         {
             if (!Schema.Table(tableName).Exists())
@@ -21,8 +20,10 @@ namespace Projekt_Sklep.Persistence.Pojazdy.DatabaseMigrations.Iteration420
                     .WithColumn(nameof(Models.Pojazdy.Pojazdy.VIN)).AsString().Nullable()
                     .WithColumn(nameof(Models.Pojazdy.Pojazdy.Uszkodzony)).AsString().Nullable()
                     .WithColumn("Klient").AsGuid().NotNullable();
+                //.WithColumn("Polisa").AsGuid().NotNullable();
 
-                Create.ForeignKey("FK_Kilent").FromTable("Pojazdy").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
+                // Create.ForeignKey("FK_Polisa").FromTable("Pojazdy").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Kilent2").FromTable("Pojazdy").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
             }
         }
 
@@ -30,8 +31,12 @@ namespace Projekt_Sklep.Persistence.Pojazdy.DatabaseMigrations.Iteration420
         {
             if (Schema.Table(tableName).Exists())
             {
-                Delete.ForeignKey("FK_Klient").OnTable(tableName);
+                // Usuń ograniczenie klucza obcego
+                //Delete.ForeignKey("FK_Polisa").OnTable(tableName);
+                Delete.ForeignKey("FK_Klient2").OnTable(tableName);
+                // Usuń klucz główny
                 Delete.PrimaryKey("PK_Pojazdy").FromTable(tableName);
+                // Usuń tabelę
                 Delete.Table(tableName);
             }
         }

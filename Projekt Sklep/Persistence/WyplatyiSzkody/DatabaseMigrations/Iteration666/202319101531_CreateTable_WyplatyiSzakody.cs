@@ -22,7 +22,7 @@ namespace Projekt_Sklep.Persistence.WyplatyiSzkody.DatabaseMigrations.Iteration6
                 //.WithColumn("Polisa").AsGuid().NotNullable();
 
                 // Create.ForeignKey("FK_Polisa").FromTable("Pojazdy").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
-                Create.ForeignKey("FK_Kilent2").FromTable("WyplatyiSzkody").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Kilent3").FromTable("WyplatyiSzkody").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
             }
         }
 
@@ -32,7 +32,7 @@ namespace Projekt_Sklep.Persistence.WyplatyiSzkody.DatabaseMigrations.Iteration6
             {
                 // Usuń ograniczenie klucza obcego
                 //Delete.ForeignKey("FK_Polisa").OnTable(tableName);
-                Delete.ForeignKey("FK_Klient2").OnTable(tableName);
+                Delete.ForeignKey("FK_Klient3").OnTable(tableName);
                 // Usuń klucz główny
                 Delete.PrimaryKey("PK_WyplatyiSzkody").FromTable(tableName);
                 // Usuń tabelę

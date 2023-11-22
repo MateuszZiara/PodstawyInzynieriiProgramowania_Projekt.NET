@@ -18,7 +18,6 @@ namespace Projekt_Sklep.Models.Pojazdy
             Map(x => x.VIN);
             Map(x => x.Uszkodzony)
             .CustomType<YesNoType>();
-            // Map(x => x.Polisa);
             Map(x => x.Klient);
             Table(tablename);
         }

@@ -3,5 +3,6 @@
     public interface IPojazdyService
     {
         void VINCheck(string VIN);
+        void RejestracyjnyChceck(string NrRejestracyjny);
     }
 }

@@ -55,6 +55,9 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>()
                         )
+                        .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Polisy.Polisy>()
+                        )
                         .Mappings(m => 
                         m.FluentMappings.AddFromAssemblyOf<WyplatyiSzkody.WyplatyiSzkody>()
                         )

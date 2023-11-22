@@ -4,8 +4,8 @@ using Projekt_Sklep.Models.Klient;
 
 namespace Projekt_Sklep.Persistence.Logi.DatabaseMigrations.Iteration404
 {
-    [Migration(202319101635)]
-    public class _202319101635_CreateTable_ : Migration
+    [Migration(202329101635)]
+    public class _202329101635_CreateTable_ : Migration
     {
         readonly string tableName = nameof(Models.Logi.Logi);
         public override void Up()

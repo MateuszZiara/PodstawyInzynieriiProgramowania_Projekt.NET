@@ -2,8 +2,8 @@
 
 namespace Projekt_Sklep.Persistence.Roszczenia.DatabaseMigrations.Iteration2344
 {
-    [Migration(202319101736)]
-    public class _202319101736_CreateTable_Roszczenia : Migration
+    [Migration(202329101736)]
+    public class _202329101736_CreateTable_Roszczenia : Migration
     {
         readonly string tableName = nameof(Models.Roszczenia.Roszczenia);
         public override void Up()
@@ -20,7 +20,7 @@ namespace Projekt_Sklep.Persistence.Roszczenia.DatabaseMigrations.Iteration2344
                     .WithColumn("Polisa").AsGuid().NotNullable()
                     .WithColumn("WyplatyiSzkody").AsGuid().NotNullable();
                 Create.ForeignKey("FK_Ubezpieczyciele2").FromTable("Roszczenia").ForeignColumn("Ubezpieczyciele").ToTable("Ubezpieczyciele").PrimaryColumn("Id");
-                Create.ForeignKey("FK_Klient4").FromTable("Roszczenia").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Klient6").FromTable("Roszczenia").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
                 Create.ForeignKey("FK_Polisa99").FromTable("Roszczenia").ForeignColumn("Polisa").ToTable("Polisy").PrimaryColumn("Id");
                 Create.ForeignKey("FK_WyplatyiSzkody2").FromTable("Roszczenia").ForeignColumn("WyplatyiSzkody").ToTable("WyplatyiSzkody").PrimaryColumn("Id");
             }
@@ -32,7 +32,7 @@ namespace Projekt_Sklep.Persistence.Roszczenia.DatabaseMigrations.Iteration2344
             {
                 // Usuń ograniczenie klucza obcego
                 Delete.ForeignKey("FK_Ubezpieczyciele").OnTable(tableName);
-                Delete.ForeignKey("FK_Klient").OnTable(tableName);
+                Delete.ForeignKey("FK_Klient6").OnTable(tableName);
                 Delete.ForeignKey("FK_WyplatyiSzkody").OnTable(tableName);
                 // Usuń klucz główny
                 Delete.PrimaryKey("PK_Roszczenia").FromTable(tableName);

@@ -21,7 +21,6 @@ namespace Projekt_Sklep.Models.RodzajePolis
         public virtual RodzajePolisEnum Rodzaj { get; set; }
         public virtual DateTime DataRozpoczecia { get; set; }
         public virtual DateTime DataZakonczenia { get; set; }
-
         public virtual int CenaPodstawowa { get; set; }
     }
 }

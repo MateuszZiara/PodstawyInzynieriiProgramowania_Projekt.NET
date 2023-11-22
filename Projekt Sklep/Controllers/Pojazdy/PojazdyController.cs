@@ -53,6 +53,7 @@ namespace Projekt_Sklep.Controllers.Pojazdy
                     {
                         IPojazdyService pojazdyServices = new PojazdyService();
                         pojazdyServices.VINCheck(pojazdy.VIN);
+                        pojazdyServices.RejestracyjnyChceck(pojazdy.NrRejestracyjny);
                         session.Save(pojazdy);
                         transaction.Commit();
                         return CreatedAtAction(nameof(GetById), new { id = pojazdy.Id }, pojazdy);
