@@ -5,6 +5,8 @@ using Projekt_Sklep.Persistence.Pojazdy;
 using System.Text.RegularExpressions;
 using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Persistence.Placowki;
+using Projekt_Sklep.Persistence.Ubezpieczyciele;
+using System.ComponentModel.DataAnnotations;
 
 namespace Projekt_Sklep.Controllers.Pojazdy
 {
@@ -12,7 +14,7 @@ namespace Projekt_Sklep.Controllers.Pojazdy
     [ApiController]
     public class PojazdyController : ControllerBase
     {
-
+        PojazdyService pojazdyService = new PojazdyService();
         [HttpGet]
         public ActionResult<IEnumerable<Models.Pojazdy.Pojazdy>> GetAll()
         {
@@ -99,6 +101,23 @@ namespace Projekt_Sklep.Controllers.Pojazdy
                 }
             }
         }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditPojazdy([Required]bool Uszkodzony, Guid Id, int NrRejestracyjny = -1, string Marka = null, string Model = null, int Rocznik = -1, string VIN = null, Guid? Klient = null)
+        {
+            Guid guid = Guid.NewGuid();
+            if (Klient == null)
+            {
+
+                guid = Guid.Empty;
+            }
+            else
+                guid = Klient.Value;
+            return pojazdyService.edit(Id, NrRejestracyjny, Marka, Model, Rocznik, VIN, Uszkodzony, guid);
+
+        }
+
     }
 
 }

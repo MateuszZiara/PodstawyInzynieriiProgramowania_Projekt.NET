@@ -1,4 +1,6 @@
-﻿namespace Projekt_Sklep.Models.Pojazdy
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Projekt_Sklep.Models.Pojazdy
 {
     public class Pojazdy
     {
