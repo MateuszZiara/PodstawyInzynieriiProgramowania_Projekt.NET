@@ -4,10 +4,10 @@
 }
 .strona-g-wna {
   background: #ffffff;
-  width: 1440px;
+  width: 100%;
+  max-width:100%;
   height: 4850px;
   position: relative;
-  overflow-x: auto;
 }
 .layer-1 {
   height: auto;
