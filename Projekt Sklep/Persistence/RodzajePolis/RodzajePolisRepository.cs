@@ -1,24 +1,25 @@
 ﻿using Projekt_Sklep.Models;
-using Projekt_Sklep.Models.Znizki;
+using Projekt_Sklep.Models.RodzajePolis;
 
-namespace Projekt_Sklep.Persistence.Znizki
+namespace Projekt_Sklep.Persistence.RodzajePolis
 {
-    public class ZnizkiRepository : IZnizkiRepository
+    public class RodzajePolisRepository
     {
-        public bool edit(Guid Id, string Dorosly_dziecko, bool Wiek)
+        public bool edit(Guid Id, RodzajePolisEnum Rodzaj, DateTime DataRozpoczecia, DateTime DataZakonczenia, int CenaPodstawowa)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    var query = session.Query<Models.Znizki.Znizki>().Where(x => x.Id == Id).ToList();
+                    var query = session.Query<Models.RodzajePolis.RodzajePolis>().Where(x => x.Id == Id).ToList();
                     if (query.Count == 0)
                         return false;
                     foreach (var entity in query)
                     {
 
-                        if (Dorosly_dziecko != null)
-                            entity.Dorosly_dziecko = Dorosly_dziecko;
+                        
+                        if (CenaPodstawowa != -1)
+                            entity.CenaPodstawowa = CenaPodstawowa;
 
                         session.SaveOrUpdate(entity);
                         transaction.Commit();

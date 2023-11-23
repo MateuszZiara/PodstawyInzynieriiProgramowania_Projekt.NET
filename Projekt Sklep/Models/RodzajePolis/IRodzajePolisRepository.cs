@@ -1,6 +1,7 @@
 ﻿namespace Projekt_Sklep.Models.RodzajePolis
 {
-    public class IRodzajePolisRepository
+    public interface IRodzajePolisRepository
     {
+         public bool edit(Guid Id, RodzajePolisEnum Rodzaj , DateTime DataRozpoczecia, DateTime DataZakonczenia, int CenaPodstawowa);
     }
 }

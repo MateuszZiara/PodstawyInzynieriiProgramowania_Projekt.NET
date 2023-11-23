@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Models;
+using Projekt_Sklep.Persistence.Pojazdy;
+using System.ComponentModel.DataAnnotations;
+using Projekt_Sklep.Models.RodzajePolis;
+using Projekt_Sklep.Persistence.RodzajePolis;
 
 namespace Projekt_Sklep.Controllers.RodzajePolis
 {
@@ -9,6 +13,7 @@ namespace Projekt_Sklep.Controllers.RodzajePolis
     public class RodzajePolisController : ControllerBase
     {
 
+        readonly RodzajePolisService rodzajePolisService = new RodzajePolisService();  
         [HttpGet]
         public ActionResult<IEnumerable<Models.RodzajePolis.RodzajePolis>> GetAll()
         {
@@ -95,6 +100,15 @@ namespace Projekt_Sklep.Controllers.RodzajePolis
                     }
                 }
             }
+        }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditRodzajePolis(Guid Id, RodzajePolisEnum Rodzaj, DateTime DataRozpoczecia, DateTime DataZakonczenia, int CenaPodstawowa = -1)
+        {
+
+            return rodzajePolisService.edit(Id, Rodzaj, DataRozpoczecia, DataZakonczenia, CenaPodstawowa);
+
         }
 
     }

@@ -3,6 +3,9 @@ using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.Znizki;
 using Projekt_Sklep.Models.Znizki;
+using Projekt_Sklep.Persistence.Pojazdy;
+using System.ComponentModel.DataAnnotations;
+using Projekt_Sklep.Persistence.Adres;
 
 namespace Projekt_Sklep.Controllers.Znizki
 {
@@ -11,7 +14,7 @@ namespace Projekt_Sklep.Controllers.Znizki
     [ApiController]
     public class ZnizkiController : ControllerBase
     {
-        readonly ZnizkiService znizkiService;
+        readonly ZnizkiService znizkiService = new ZnizkiService();
         [HttpGet]
         public ActionResult<IEnumerable<Models.Znizki.Znizki>> GetAll()
         {
@@ -100,6 +103,15 @@ namespace Projekt_Sklep.Controllers.Znizki
                 }
             }
         }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditPojazdy([Required] bool Wiek, Guid Id, string Dorosly_dziecko)
+        {
+            return znizkiService.edit(Id, Dorosly_dziecko, Wiek);
+
+        }
+
 
 
     }
