@@ -221,7 +221,7 @@
   overflow: visible;
 }
 .group-997 {
-  position: absolute;
+  position: static;
   inset: 0;
 }
 .a-relative {
@@ -253,7 +253,7 @@
   justify-content: center;
 }
 .group-998 {
-  position: absolute;
+  position: static;
   inset: 0;
 }
 .group-992 {
@@ -413,7 +413,7 @@
   font: 500 10px/163% "Inter-Medium", sans-serif;
 }
 .group-1014 {
-  position: absolute;
+  position: static;
   inset: 0;
 }
 .group-9972 {

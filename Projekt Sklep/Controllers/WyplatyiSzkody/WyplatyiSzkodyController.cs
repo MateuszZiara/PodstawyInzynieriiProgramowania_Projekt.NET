@@ -3,6 +3,8 @@ using Projekt_Sklep.Models.WyplatyiSzkody;
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Persistence.WyplatyiSzkody;
 using System.Text.RegularExpressions;
+using Projekt_Sklep.Persistence.Pojazdy;
+using System.ComponentModel.DataAnnotations;
 
 namespace Projekt_Sklep.Controllers.WyplatyiSzkody
 {
@@ -10,7 +12,7 @@ namespace Projekt_Sklep.Controllers.WyplatyiSzkody
     [ApiController]
     public class WyplatyiSzkodyController : ControllerBase
     {
-
+        WyplatyiSzkodyService wyplatyiSzkodyService = new WyplatyiSzkodyService();
         [HttpGet]
         public ActionResult<IEnumerable<Models.WyplatyiSzkody.WyplatyiSzkody>> GetAll()
         {
@@ -107,6 +109,23 @@ namespace Projekt_Sklep.Controllers.WyplatyiSzkody
                 }
             }
         }
+
+        //Funkcje własne
+        [HttpPost("Edit/{Id}")]
+        public bool EditPojazdy([Required] bool StatusWyplaty, Guid Id, DateTime DataZgloszenia, int WartoscSzkody = -1, string TypSzkody = null,Guid? Klient = null)
+        {
+            Guid guid = Guid.NewGuid();
+            if (Klient == null)
+            {
+
+                guid = Guid.Empty;
+            }
+            else
+                guid = Klient.Value;
+            return wyplatyiSzkodyService.edit(Id, DataZgloszenia, WartoscSzkody, TypSzkody, StatusWyplaty, guid);
+
+        }
+
     }
 
 }
