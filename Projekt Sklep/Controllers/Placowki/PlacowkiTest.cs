@@ -112,7 +112,7 @@ namespace Projekt_Sklep.Tests
             Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.EditPlacowki(new Guid("a424923b-dee7-46fb-a1d1-23dbab138285"), 123, "222-222-22-22");
+            var result = _controller.EditPlacowki(new Guid("34b4dfef-e876-4749-8859-f09924948719"), 123, "222-222-22-22");
 
             // Assert
             Assert.True(result);

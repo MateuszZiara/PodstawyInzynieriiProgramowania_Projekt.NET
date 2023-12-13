@@ -113,7 +113,7 @@ namespace Projekt_Sklep.Tests
             Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.EditPojazdy(true, new Guid("db721749-08bb-44ea-898e-c96e0f6d1f1f"), 123, "Brand", "Model", 2022);
+            var result = _controller.EditPojazdy(true, new Guid("37867691-1668-4e8a-aadf-f116bb06215f"), 123, "Brand", "Model", 2022);
 
             // Assert
             Assert.True(result);

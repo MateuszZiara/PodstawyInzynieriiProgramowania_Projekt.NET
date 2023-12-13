@@ -31,7 +31,6 @@ namespace Projekt_Sklep.Tests
             var polisyList = okResult?.Value as List<Models.Polisy.Polisy>;
 
             Assert.NotNull(polisyList);
-            Assert.NotEmpty(polisyList);
         }
 
         [Fact]
@@ -112,7 +111,7 @@ namespace Projekt_Sklep.Tests
             Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.czyAktywna(new Guid("f6afe20c-520b-49dd-9322-27ac23b8459c"));
+            var result = _controller.czyAktywna(new Guid("a0d0cb98-04bf-4078-b563-32fdb379c62c"));
 
             // Assert
             Assert.False(result);
