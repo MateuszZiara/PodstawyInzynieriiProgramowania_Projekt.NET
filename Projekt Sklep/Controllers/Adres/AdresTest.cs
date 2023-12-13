@@ -114,11 +114,8 @@ namespace Projekt_Sklep.Tests
         [Fact]
         public void EditAdresEntity_ReturnsTrue_WhenEditSuccessful()
         {
-            // Arrange
-            Guid id = Guid.NewGuid();
-
             // Act
-            var result = _controller.EditAdresEntity(new Guid("c5c4793e-984b-46c4-b43c-804e2253c2f5"), "12345", "City", "Province", "Country");
+            var result = _controller.EditAdresEntity(new Guid("1bc6121d-dc16-4738-a568-2f0aeccab9e7"), "12345", "City", "Province", "Country");
 
             // Assert
             Assert.True(result);
