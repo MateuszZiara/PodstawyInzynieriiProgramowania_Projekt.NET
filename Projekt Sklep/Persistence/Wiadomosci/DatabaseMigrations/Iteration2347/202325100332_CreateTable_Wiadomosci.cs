@@ -12,18 +12,18 @@ namespace Projekt_Sklep.Persistence.Wiadomosci.DatabaseMigrations.Iteration2347
             if (!Schema.Table(tableName).Exists())
             {
                 Create.Table(tableName)
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.Id)).AsGuid().NotNullable().PrimaryKey()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.NrRejestracyjny)).AsString().Nullable()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.Marka)).AsString().Nullable()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.Model)).AsString().Nullable()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.Rocznik)).AsString().Nullable()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.VIN)).AsString().Nullable()
-                    .WithColumn(nameof(Models.Pojazdy.Pojazdy.Uszkodzony)).AsString().Nullable()
-                    .WithColumn("Klient").AsGuid().NotNullable();
-                //.WithColumn("Polisa").AsGuid().NotNullable();
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.Id)).AsGuid().NotNullable().PrimaryKey()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.Odczytane)).AsBoolean().NotNullable()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.DataWyslania)).AsDateTime().NotNullable()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.Wiadomosc)).AsString().Nullable()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.Nadawca)).AsInt32().NotNullable()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.Odbiorca)).AsInt32().NotNullable()
+                    .WithColumn("Klient").AsGuid().NotNullable()
+                    .WithColumn("Ubezpieczyciele").AsGuid().NotNullable()
+                    .WithColumn(nameof(Models.Wiadomosci.Wiadomosci.ParentMessage)).AsString().Nullable();
 
-                // Create.ForeignKey("FK_Polisa").FromTable("Pojazdy").ForeignColumn("Polisa").ToTable("Polisa").PrimaryColumn("Id");
-                Create.ForeignKey("FK_Kilent2").FromTable("Pojazdy").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Ubezpieczyciele35").FromTable("Wiadomosci").ForeignColumn("Ubezpieczyciele").ToTable("Ubezpieczyciele").PrimaryColumn("Id");
+                Create.ForeignKey("FK_Kilent209").FromTable("Wiadomosci").ForeignColumn("Klient").ToTable("KlientEntity").PrimaryColumn("Id");
             }
         }
 
@@ -32,10 +32,8 @@ namespace Projekt_Sklep.Persistence.Wiadomosci.DatabaseMigrations.Iteration2347
             if (Schema.Table(tableName).Exists())
             {
                 // Usuń ograniczenie klucza obcego
-                //Delete.ForeignKey("FK_Polisa").OnTable(tableName);
-                Delete.ForeignKey("FK_Klient2").OnTable(tableName);
-                // Usuń klucz główny
-                Delete.PrimaryKey("PK_Pojazdy").FromTable(tableName);
+                Delete.ForeignKey("FK_Klient209").OnTable(tableName);
+                Delete.ForeignKey("FK_Ubezpieczyciele305").OnTable(tableName);
                 // Usuń tabelę
                 Delete.Table(tableName);
             }

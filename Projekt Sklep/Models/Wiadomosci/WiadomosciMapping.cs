@@ -16,6 +16,7 @@ namespace Projekt_Sklep.Models.Wiadomosci
             Map(x => x.Odbiorca).CustomType<WiadomosciEnum>();
             Map(x => x.Klient);
             Map(x => x.Ubezpieczyciele);
+            Map(x => x.ParentMessage);
             Table(tablename);
         }
     }

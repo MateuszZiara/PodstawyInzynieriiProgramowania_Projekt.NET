@@ -1,46 +1,46 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Models;
+using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Models.Placowki;
 using Projekt_Sklep.Persistence.Placowki;
-using System.Text.RegularExpressions;
 
-namespace Projekt_Sklep.Controllers.Placowki
+namespace Projekt_Sklep.Controllers.Wiadomosci
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PlacowkiController : ControllerBase
+    public class WiadomosciController : ControllerBase
     {
-
         [HttpGet]
-        public ActionResult<IEnumerable<Models.Placowki.Placowki>> GetAll()
+        public ActionResult<IEnumerable<Models.Wiadomosci.Wiadomosci>> GetAll()
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntities = session.Query<Models.Placowki.Placowki>().ToList();
+                var klientEntities = session.Query<Models.Wiadomosci.Wiadomosci>().ToList();
                 return Ok(klientEntities);
             }
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Models.Placowki.Placowki> GetById(Guid id)
+        public ActionResult<Models.Wiadomosci.Wiadomosci> GetById(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var klientEntity = session.Get<Models.Placowki.Placowki>(id);
+                var wiadomosc = session.Get<Models.Wiadomosci.Wiadomosci>(id);
 
-                if (klientEntity == null)
+                if (wiadomosc == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(klientEntity);
+                return Ok(wiadomosc);
             }
 
         }
+
         [HttpPost]
-        public ActionResult<Models.Placowki.Placowki> CreatePlacowkiEntity([FromBody] Models.Placowki.Placowki placowki)
+        public ActionResult<Models.Wiadomosci.Wiadomosci> CreateWiadomosc([FromBody] Models.Wiadomosci.Wiadomosci wiadomosci)
         {
-            if (placowki == null)
+            if (wiadomosci == null)
             {
                 return BadRequest("Invalid data");
             }
@@ -50,11 +50,9 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        IPlacowkiService placowkiService = new PlacowkiService();
-                        placowkiService.NIPCheck(placowki.NIP);
-                        session.Save(placowki);
+                        session.Save(wiadomosci);
                         transaction.Commit();
-                        return CreatedAtAction(nameof(GetById), new { id = placowki.Id }, placowki);
+                        return CreatedAtAction(nameof(GetById), new { id = wiadomosci.Id }, wiadomosci);
                     }
                     catch (Exception ex)
                     {
@@ -65,8 +63,9 @@ namespace Projekt_Sklep.Controllers.Placowki
             }
 
         }
+
         [HttpDelete("{id}")]
-        public ActionResult DeletePlacowki(Guid id)
+        public ActionResult DeleteWiadomosc(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
@@ -74,15 +73,15 @@ namespace Projekt_Sklep.Controllers.Placowki
                 {
                     try
                     {
-                        var placowki = session.Get<Models.Placowki.Placowki>(id);
+                        var wiadomosc = session.Get<Models.Wiadomosci.Wiadomosci>(id);
 
-                        if (placowki == null)
+                        if (wiadomosc == null)
                         {
                             return NotFound();
                         }
 
 
-                        session.Delete(placowki);
+                        session.Delete(wiadomosc);
 
 
                         transaction.Commit();
@@ -98,6 +97,6 @@ namespace Projekt_Sklep.Controllers.Placowki
                 }
             }
         }
-    }
 
+    }
 }

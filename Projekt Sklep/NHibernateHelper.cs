@@ -9,6 +9,7 @@ using Projekt_Sklep.Models.Znizki;
 using Projekt_Sklep.Models.WyplatyiSzkody;
 using System.Data.SqlClient;
 using Projekt_Sklep.Models.Roszczenia;
+using Projekt_Sklep.Models.Wiadomosci;
 
 namespace Projekt_Sklep.Models
 {
@@ -53,6 +54,9 @@ namespace Projekt_Sklep.Models
                         m.FluentMappings.AddFromAssemblyOf<Ubezpieczyciele.Ubezpieczyciele>()
                         )
                         .Mappings(m =>
+                        m.FluentMappings.AddFromAssemblyOf<Wiadomosci.Wiadomosci>().Conventions.AddFromAssemblyOf<WiadomosciEnum>()
+                        )
+                        .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Pojazdy.Pojazdy>()
                         )
                         .Mappings(m =>
@@ -67,8 +71,7 @@ namespace Projekt_Sklep.Models
                         .Mappings(m =>
                         m.FluentMappings.AddFromAssemblyOf<Roszczenia.Roszczenia>().Conventions.AddFromAssemblyOf<RoszczeniaEnum>()
                         )
-
-
+                        
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
 

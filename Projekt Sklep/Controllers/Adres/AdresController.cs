@@ -2,8 +2,10 @@
 using Projekt_Sklep.Models;
 using Projekt_Sklep.Models.Adres;
 using Projekt_Sklep.Models.Klient;
+using Projekt_Sklep.Models.Pojazdy;
 using Projekt_Sklep.Persistence.Adres;
 using Projekt_Sklep.Persistence.Klient;
+using Projekt_Sklep.Persistence.Pojazdy;
 
 namespace Projekt_Sklep.Controllers.Adres
 {
@@ -39,9 +41,9 @@ namespace Projekt_Sklep.Controllers.Adres
 
         }
         [HttpPost]
-        public ActionResult<Models.Adres.Adres> CreateAdresEntity([FromBody] Models.Adres.Adres Adres)
+        public ActionResult<Models.Adres.Adres> CreateAdresEntity([FromBody] Models.Adres.Adres adres)
         {
-            if (Adres == null)
+            if (adres == null)
             {
                 return BadRequest("Invalid data");
             }
@@ -51,9 +53,11 @@ namespace Projekt_Sklep.Controllers.Adres
                 {
                     try
                     {
-                        session.Save(Adres);
+                        IAdresService adresServices = new AdresService();
+                        adresServices.PostalCodeCheck(adres.KodPocztowy);
+                        session.Save(adres);
                         transaction.Commit();
-                        return CreatedAtAction(nameof(GetById), new { id = Adres.Id }, Adres);
+                        return CreatedAtAction(nameof(GetById), new { id = adres.Id }, adres);
                     }
                     catch (Exception ex)
                     {

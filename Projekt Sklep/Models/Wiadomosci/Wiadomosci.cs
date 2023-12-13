@@ -7,7 +7,7 @@
 
         /*LMK gdyby ktoś miał lepszy pomysł na rozwiązanie kwestii określania kto jest odbiorcą, a kto nadawcą. 
          * Ja to widzę tak, że określamy pierw czy dostac ma to klient czy inny ubezpieczyciel, a następnie określamy która to ma być osoba z danej grupy*/
-        public Wiadomosci(Guid Id, bool Odczytane, DateTime DataWyslania, string Wiadomosc, WiadomosciEnum Nadawca, WiadomosciEnum Odbiorca, Guid Klient, Guid Ubezpieczyciele)
+        public Wiadomosci(Guid Id, bool Odczytane, DateTime DataWyslania, string Wiadomosc, WiadomosciEnum Nadawca, WiadomosciEnum Odbiorca, Guid Klient, Guid Ubezpieczyciele, string ParentMessage)
         {
             this.Id = Id;
             this.Odczytane = Odczytane;
@@ -17,6 +17,7 @@
             this.Odbiorca= Odbiorca;
             this.Klient= Klient;   
             this.Ubezpieczyciele= Ubezpieczyciele;  
+            this.ParentMessage= ParentMessage;
         }
 
         public virtual Guid Id { get; set; }
@@ -27,6 +28,7 @@
         public virtual WiadomosciEnum Odbiorca { get; set; }
         public virtual Guid Klient { get; set; }
         public virtual Guid Ubezpieczyciele { get; set; }
+        public virtual string ParentMessage { get; set;}
 
     }
 }
