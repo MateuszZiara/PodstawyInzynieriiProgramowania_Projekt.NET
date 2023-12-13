@@ -110,6 +110,7 @@ namespace Projekt_Sklep.Controllers.Klient
                 guid = AdresID.Value;
             return klientEntityService.edit(id, name, lastname, pesel, numertelefonu, email, nip, guid);
         }
+
         [HttpGet("getByPolisaPojazd/{Id}")]
         public ActionResult<PolisyPojazdyResponse> getByPolisaPojazd(Guid Id)
         {

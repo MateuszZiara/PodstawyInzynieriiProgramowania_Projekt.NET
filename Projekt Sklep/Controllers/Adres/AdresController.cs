@@ -64,7 +64,7 @@ namespace Projekt_Sklep.Controllers.Adres
             }
         }
         [HttpDelete("{id}")]
-        public ActionResult DeleteKlientEntity(Guid id)
+        public ActionResult DeleteAdresEntity(Guid id)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
@@ -98,7 +98,7 @@ namespace Projekt_Sklep.Controllers.Adres
         }
         //Funkcje własne
         [HttpPost("Edit/{id}")]
-        public bool EditKlientEntity(Guid id, string kodPocztowy = null, string miasto = null, string wojewodztwo = null, string panstwo = null)
+        public bool EditAdresEntity(Guid id, string kodPocztowy = null, string miasto = null, string wojewodztwo = null, string panstwo = null)
         {
            
             return adresService.edit(id, kodPocztowy, miasto, wojewodztwo, panstwo);

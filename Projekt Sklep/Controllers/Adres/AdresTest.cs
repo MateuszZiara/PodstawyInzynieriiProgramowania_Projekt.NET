@@ -84,13 +84,13 @@ namespace Projekt_Sklep.Tests
         }
 
         [Fact]
-        public void DeleteKlientEntity_ReturnsNoContentResult()
+        public void DeleteAdresEntity_ReturnsNoContentResult()
         {
             // Arrange
             Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.DeleteKlientEntity(id);
+            var result = _controller.DeleteAdresEntity(id);
 
             // Assert
             Assert.IsType<NotFoundResult>(result);
@@ -98,13 +98,13 @@ namespace Projekt_Sklep.Tests
         }
 
         [Fact]
-        public void DeleteKlientEntity_ReturnsNotFoundResult_WhenIdDoesNotExist()
+        public void DeleteAdresEntity_ReturnsNotFoundResult_WhenIdDoesNotExist()
         {
             // Arrange
             Guid nonExistentId = Guid.NewGuid();
 
             // Act
-            var result = _controller.DeleteKlientEntity(nonExistentId);
+            var result = _controller.DeleteAdresEntity(nonExistentId);
 
             // Assert
             Assert.IsType<NotFoundResult>(result);
@@ -112,13 +112,13 @@ namespace Projekt_Sklep.Tests
         }
 
         [Fact]
-        public void EditKlientEntity_ReturnsTrue_WhenEditSuccessful()
+        public void EditAdresEntity_ReturnsTrue_WhenEditSuccessful()
         {
             // Arrange
             Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.EditKlientEntity(new Guid("c5c4793e-984b-46c4-b43c-804e2253c2f5"), "12345", "City", "Province", "Country");
+            var result = _controller.EditAdresEntity(new Guid("c5c4793e-984b-46c4-b43c-804e2253c2f5"), "12345", "City", "Province", "Country");
 
             // Assert
             Assert.True(result);
