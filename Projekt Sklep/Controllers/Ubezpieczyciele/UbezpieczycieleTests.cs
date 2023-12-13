@@ -1,21 +1,21 @@
-using Xunit;
+﻿using Xunit;
 using Microsoft.AspNetCore.Mvc;
-using Projekt_Sklep.Controllers.Adres;
-using Projekt_Sklep.Models.Adres;
+using Projekt_Sklep.Controllers.Ubezpieczyciele;
+using Projekt_Sklep.Models.Ubezpieczyciele;
 using System;
+using System.Collections.Generic;
 
 namespace Projekt_Sklep.Tests
 {
-    public class AdresControllerTests
+    public class UbezpieczycieleTests
     {
-        private readonly AdresController _controller;
+        private readonly UbezpieczycieleController _controller;
 
-        public AdresControllerTests()
+        public UbezpieczycieleTests()
         {
-            _controller = new AdresController();
+            _controller = new UbezpieczycieleController();
         }
 
-        
         [Fact]
         public void GetAll_ReturnsOkResult()
         {
@@ -23,20 +23,15 @@ namespace Projekt_Sklep.Tests
             var result = _controller.GetAll();
 
             // Assert
-            Assert.IsType<ActionResult<IEnumerable<Models.Adres.Adres>>>(result);
+            Assert.IsType<ActionResult<IEnumerable<Ubezpieczyciele>>>(result);
 
-           
-                Assert.IsType<OkObjectResult>(result.Result);
+            Assert.IsType<OkObjectResult>(result.Result);
 
-                var okResult = result.Result as OkObjectResult;
-                var adresList = okResult?.Value as List<Models.Adres.Adres>;
+            var okResult = result.Result as OkObjectResult;
+            var ubezpieczycieleList = okResult?.Value as List<Ubezpieczyciele>;
 
-                Assert.NotNull(adresList);
-                Assert.NotEmpty(adresList);
-
-                
+            Assert.NotNull(ubezpieczycieleList);
         }
-
 
         [Fact]
         public void GetById_ReturnsNotFoundResult_WhenIdDoesNotExist()
@@ -48,38 +43,38 @@ namespace Projekt_Sklep.Tests
             var result = _controller.GetById(id);
 
             // Assert
-            Assert.IsType<ActionResult<Models.Adres.Adres>>(result);
+            Assert.IsType<ActionResult<Ubezpieczyciele>>(result);
             Assert.IsType<NotFoundResult>(result.Result);
         }
 
         [Fact]
-        public void CreateAdresEntity_ReturnsCreatedAtActionResult()
+        public void CreateKlientEntity_ReturnsCreatedAtActionResult()
         {
             // Arrange
-            var newAdres = new Models.Adres.Adres
+            var newUbezpieczyciele = new Ubezpieczyciele
             {
-                // Set properties for the new Adres
+                // Set properties for the new Ubezpieczyciele
             };
 
             // Act
-            var result = _controller.CreateAdresEntity(newAdres);
+            var result = _controller.CreateKlientEntity(newUbezpieczyciele);
 
             // Assert
-            Assert.IsType<ActionResult<Models.Adres.Adres>>(result);
+            Assert.IsType<ActionResult<Ubezpieczyciele>>(result);
             Assert.IsType<ObjectResult>(result.Result);
         }
 
         [Fact]
-        public void CreateAdresEntity_ReturnsBadRequestResult_WhenInvalidData()
+        public void CreateKlientEntity_ReturnsBadRequestResult_WhenInvalidData()
         {
             // Arrange
-            Models.Adres.Adres invalidAdres = null;
+            Ubezpieczyciele invalidUbezpieczyciele = null;
 
             // Act
-            var result = _controller.CreateAdresEntity(invalidAdres);
+            var result = _controller.CreateKlientEntity(invalidUbezpieczyciele);
 
             // Assert
-            Assert.IsType<ActionResult<Models.Adres.Adres>>(result);
+            Assert.IsType<ActionResult<Ubezpieczyciele>>(result);
             Assert.IsType<BadRequestObjectResult>(result.Result);
         }
 
@@ -94,7 +89,6 @@ namespace Projekt_Sklep.Tests
 
             // Assert
             Assert.IsType<NotFoundResult>(result);
-            
         }
 
         [Fact]
@@ -108,17 +102,14 @@ namespace Projekt_Sklep.Tests
 
             // Assert
             Assert.IsType<NotFoundResult>(result);
-            
         }
 
         [Fact]
-        public void EditKlientEntity_ReturnsTrue_WhenEditSuccessful()
+        public void EditUbezpieczyciele_ReturnsTrue_WhenEditSuccessful()
         {
-            // Arrange
-            Guid id = Guid.NewGuid();
 
             // Act
-            var result = _controller.EditKlientEntity(new Guid("1bc6121d-dc16-4738-a568-2f0aeccab9e7"), "12345", "City", "Province", "Country");
+            var result = _controller.EditUbezpieczyciele(new Guid("862713b3-08ca-4ef6-a174-e873be891777"), "Nazwisko", "Email", "Phone", "OsobaKontaktowa", "NazwaFirmy");
 
             // Assert
             Assert.True(result);
