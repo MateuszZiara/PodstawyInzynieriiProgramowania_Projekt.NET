@@ -1,1772 +1,1773 @@
 .strona-g-wna,
 .strona-g-wna * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .strona-g-wna {
-  background: #ffffff;
-  width: 100%;
-  max-width:100%;
-  height: 4850px;
-  position: relative;
+    background: #ffffff;
+    width: 100%;
+    max-width:100%;
+    min-width:100%;
+    height: 4850px;
+    position: relative;
 }
 .layer-1 {
-  height: auto;
-  position: absolute;
-  left: -204px;
-  top: 1542.23px;
-  overflow: visible;
+    height: auto;
+    position: absolute;
+    left: -204px;
+    top: 1542.23px;
+    overflow: visible;
 }
 .zg-aszanie-szk-d {
-  color: #8d8d8d;
-  text-align: left;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 1032px;
-  top: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8d8d8d;
+    text-align: left;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 1032px;
+    top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .kontakt {
-  color: #8d8d8d;
-  text-align: left;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 956px;
-  top: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8d8d8d;
+    text-align: left;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 956px;
+    top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .ubezpiecz-swoje-jutro-ju-dzi {
-  color: #1a1a1a;
-  text-align: center;
-  font: 700 64px/100% "Inter-Bold", sans-serif;
-  position: absolute;
-  left: calc(50% - 367px);
-  top: 131px;
-  width: 730px;
-  height: 163px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #1a1a1a;
+    text-align: center;
+    font: 700 64px/100% "Inter-Bold", sans-serif;
+    position: absolute;
+    left: calc(50% - 367px);
+    top: 131px;
+    width: 730px;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .image-11 {
-  width: 192px;
-  height: 38px;
-  position: absolute;
-  left: calc(50% - 631px);
-  top: 51px;
+    width: 192px;
+    height: 38px;
+    position: absolute;
+    left: calc(50% - 631px);
+    top: 51px;
 }
 .from-idea-to-render {
-  color: #ffffff;
-  text-align: center;
-  font: 500 80px/73.61px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - 289px);
-  top: -200px;
-  width: 657px;
-  height: 163px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    font: 500 80px/73.61px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - 289px);
+    top: -200px;
+    width: 657px;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .platform {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 12px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - 220px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 12px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - 220px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .solutions {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 13px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - 140px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 13px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - 140px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .about-us {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 13px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - 54px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 13px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - 54px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .careers {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 12px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - -30px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 12px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - -30px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .pricing {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 13px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - -107px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 13px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - -107px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .resources {
-  color: #8b8b8b;
-  text-align: left;
-  font: 500 13px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - -178px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8b8b8b;
+    text-align: left;
+    font: 500 13px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - -178px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .login {
-  color: rgba(95, 95, 95, 0.5);
-  text-align: left;
-  font: 500 13px/17px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: calc(50% - -509px);
-  top: calc(50% - 3793px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: rgba(95, 95, 95, 0.5);
+    text-align: left;
+    font: 500 13px/17px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: calc(50% - -509px);
+    top: calc(50% - 3793px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .div-overflow-hidden {
-  background: #ffffff;
-  border-radius: 20px;
-  height: 201px;
-  position: absolute;
-  right: 1419px;
-  left: -375px;
-  top: 6126px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: #ffffff;
+    border-radius: 20px;
+    height: 201px;
+    position: absolute;
+    right: 1419px;
+    left: -375px;
+    top: 6126px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
+    overflow: hidden;
 }
 .span-inline-block {
-  width: 356px;
-  height: 161px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
+    width: 356px;
+    height: 161px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 .john-doe {
-  color: #31373d;
-  text-align: left;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .ceo-at-example {
-  color: #555e67;
-  text-align: left;
-  font: 500 14px/25.2px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 26px;
-  width: 333px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #555e67;
+    text-align: left;
+    font: 500 14px/25.2px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 26px;
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .do-aliquip-sint-ea-nostrud-excepteur-excepteur-velit-et-ea-est-nulla-eu-consequat-laborum-mollit-amet-nulla-ea-nostrud-proident-voluptate-proident-tempor-aute-deserunt-fugiat-nisi {
-  color: #b2b2b2;
-  text-align: left;
-  font: 500 14px/25.2px "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 60px;
-  width: 333px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #b2b2b2;
+    text-align: left;
+    font: 500 14px/25.2px "Inter-Medium", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .svg-h-auto {
-  width: 16px;
-  height: 20px;
-  position: absolute;
-  left: 331px;
-  top: 3px;
-  overflow: hidden;
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: 331px;
+    top: 3px;
+    overflow: hidden;
 }
 .frame {
-  width: 16px;
-  height: 20px;
-  position: absolute;
-  left: calc(50% - 8px);
-  top: 0px;
-  overflow: visible;
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 0px;
+    overflow: visible;
 }
 .group-997 {
-  position: absolute;
-  inset: 0;
+    position: static;
+    inset: 0;
 }
 .a-relative {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: #eff0f1;
-  border-width: 1px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 149px;
-  height: 41px;
-  position: absolute;
-  left: 1182px;
-  top: 44px;
-  backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #eff0f1;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 149px;
+    height: 41px;
+    position: absolute;
+    left: 1182px;
+    top: 44px;
+    backdrop-filter: blur(5px);
 }
 .logowanie {
-  color: #1a1a1a;
-  text-align: center;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #1a1a1a;
+    text-align: center;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .group-998 {
-  position: absolute;
-  inset: 0;
+    position: static;
+    inset: 0;
 }
 .group-992 {
-  width: 913px;
-  height: 588px;
-  position: static;
+    width: 913px;
+    height: 588px;
+    position: static;
 }
 .mask-group {
-  width: 913px;
-  height: 588px;
-  position: static;
+    width: 913px;
+    height: 588px;
+    position: static;
 }
 .rectangle-136 {
-  background: #ffffff;
-  border-radius: 24px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.05);
-  border-width: 1px;
-  width: 913px;
-  height: 588px;
-  position: absolute;
-  left: 39px;
-  top: 424px;
-  box-shadow: 0px 0px 0px 4px rgba(153, 153, 153, 0.05),
+    background: #ffffff;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-width: 1px;
+    width: 913px;
+    height: 588px;
+    position: absolute;
+    left: 39px;
+    top: 424px;
+    box-shadow: 0px 0px 0px 4px rgba(153, 153, 153, 0.05),
     0px 0px 0px 3.5px rgba(156, 201, 178, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
 }
 .xavier-mouton-photographie-ry-s-d-0-p-1-zl-0-unsplash-1 {
-  width: 1230px;
-  height: 820px;
-  position: absolute;
-  left: -241px;
-  top: 346px;
+    width: 1230px;
+    height: 820px;
+    position: absolute;
+    left: -241px;
+    top: 346px;
 }
 .div-overflow-hidden2 {
-  background: #f7f7f7;
-  border-radius: 17px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.05);
-  border-width: 1px;
-  padding: 40px 0px 0px 40px;
-  width: 379px;
-  height: 571px;
-  position: absolute;
-  left: 565px;
-  top: 433px;
-  overflow: hidden;
+    background: #f7f7f7;
+    border-radius: 17px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-width: 1px;
+    padding: 40px 0px 0px 40px;
+    width: 379px;
+    height: 571px;
+    position: absolute;
+    left: 565px;
+    top: 433px;
+    overflow: hidden;
 }
 .line-63 {
-  border-style: solid;
-  border-color: #e9e9e9;
-  border-width: 1px 0 0 0;
-  width: 355px;
-  height: 0px;
-  position: absolute;
-  left: 12px;
-  top: 61px;
+    border-style: solid;
+    border-color: #e9e9e9;
+    border-width: 1px 0 0 0;
+    width: 355px;
+    height: 0px;
+    position: absolute;
+    left: 12px;
+    top: 61px;
 }
 .mati-ziara-szef-rady-nadzorczej-pamp {
-  color: #838383;
-  text-align: left;
-  font: 400 10px/163% "-", sans-serif;
-  position: absolute;
-  left: 18.71px;
-  top: 457px;
-  width: 169.21px;
-  height: 48.66px;
+    color: #838383;
+    text-align: left;
+    font: 400 10px/163% "-", sans-serif;
+    position: absolute;
+    left: 18.71px;
+    top: 457px;
+    width: 169.21px;
+    height: 48.66px;
 }
 .mati-ziara-szef-rady-nadzorczej-pamp-span {
-  color: #838383;
-  font: 700 10px/163% "Inter-Bold", sans-serif;
+    color: #838383;
+    font: 700 10px/163% "Inter-Bold", sans-serif;
 }
 .mati-ziara-szef-rady-nadzorczej-pamp-span2 {
-  color: #838383;
-  font: 500 10px/163% "Inter-Medium", sans-serif;
+    color: #838383;
+    font: 500 10px/163% "Inter-Medium", sans-serif;
 }
 .steve-jobs-signature-1 {
-  width: 137px;
-  height: 38px;
-  position: absolute;
-  left: 17px;
-  top: 419px;
-  overflow: hidden;
+    width: 137px;
+    height: 38px;
+    position: absolute;
+    left: 17px;
+    top: 419px;
+    overflow: hidden;
 }
 .line-62 {
-  width: 303px;
-  height: 0px;
-  position: absolute;
-  left: 18.5px;
-  top: 440.5px;
-  overflow: visible;
+    width: 303px;
+    height: 0px;
+    position: absolute;
+    left: 18.5px;
+    top: 440.5px;
+    overflow: visible;
 }
 .button {
-  background: var(--neutral-200, #e5e5e5);
-  border-radius: 6px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 190px;
-  height: 40px;
-  position: absolute;
-  left: 93px;
-  top: 506px;
+    background: var(--neutral-200, #e5e5e5);
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    left: 93px;
+    top: 506px;
 }
 .dodaj {
-  color: var(--neutral-800, #262626);
-  text-align: left;
-  font: var(--body-2-medium, 500 14px/140% "Inter-Medium", sans-serif);
-  position: relative;
+    color: var(--neutral-800, #262626);
+    text-align: left;
+    font: var(--body-2-medium, 500 14px/140% "Inter-Medium", sans-serif);
+    position: relative;
 }
 .mati-ziara {
-  color: #000000;
-  text-align: left;
-  font: 400 30px/163% "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 38px;
-  top: 405px;
+    color: #000000;
+    text-align: left;
+    font: 400 30px/163% "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 38px;
+    top: 405px;
 }
 .list-od-prezesa-zarz-du {
-  color: #000000;
-  text-align: left;
-  font: 600 24px/32px "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 577px;
-  top: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #000000;
+    text-align: left;
+    font: 600 24px/32px "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 577px;
+    top: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .tk-2023-05-01-at-18-17-1 {
-  width: 478.86px;
-  height: 618.21px;
-  position: absolute;
-  left: 66.65px;
-  top: 447.22px;
+    width: 478.86px;
+    height: 618.21px;
+    position: absolute;
+    left: 66.65px;
+    top: 447.22px;
 }
 .szanowni-pa-stwo-z-przyjemno-ci-kieruj-do-was-kilka-s-w-jako-prezes-zarz-du-chcemy-podzi-kowa-wam-za-zaufanie-jakim-nas-obdarzacie-ka-dego-dnia-to-wasze-wsparcie-i-lojalno-s-si-nap-dow-naszej-dzia-alno-ci-kt-ra-trwa-ju-od-wielu-lat-rozumiemy-e-ubezpieczenia-to-wa-na-kwestia-w-waszym-yciu-dlatego-staramy-si-zapewni-wam-kompleksow-ochron-na-wypadek-r-nych-nieprzewidywalnych-sytuacji-nasza-misja-to-chroni-was-i-wasze-bliskie-osoby-oraz-pom-c-wam-w-trudnych-chwilach-wsp-lnie-pracujemy-nad-zabezpieczeniem-waszych-przysz-ych-potrzeb-i-d-ymy-do-tego-aby-cie-mieli-pewno-e-mo-ecie-na-nas-liczy-dzi-kujemy-wam-za-wasze-zaufanie-i-wierzymy-e-nasza-wsp-praca-przynosi-wzajemne-korzy-ci-i-e-razem-mo-emy-spokojnie-patrze-w-przysz-o-wiedz-c-e-jeste-cie-dobrze-zabezpieczeni-z-powa-aniem {
-  color: #727272;
-  text-align: left;
-  font: 400 10px/163% "-", sans-serif;
-  position: absolute;
-  left: 590px;
-  top: 502px;
-  width: 307px;
-  height: 403px;
+    color: #727272;
+    text-align: left;
+    font: 400 10px/163% "-", sans-serif;
+    position: absolute;
+    left: 590px;
+    top: 502px;
+    width: 307px;
+    height: 403px;
 }
 .szanowni-pa-stwo-z-przyjemno-ci-kieruj-do-was-kilka-s-w-jako-prezes-zarz-du-chcemy-podzi-kowa-wam-za-zaufanie-jakim-nas-obdarzacie-ka-dego-dnia-to-wasze-wsparcie-i-lojalno-s-si-nap-dow-naszej-dzia-alno-ci-kt-ra-trwa-ju-od-wielu-lat-rozumiemy-e-ubezpieczenia-to-wa-na-kwestia-w-waszym-yciu-dlatego-staramy-si-zapewni-wam-kompleksow-ochron-na-wypadek-r-nych-nieprzewidywalnych-sytuacji-nasza-misja-to-chroni-was-i-wasze-bliskie-osoby-oraz-pom-c-wam-w-trudnych-chwilach-wsp-lnie-pracujemy-nad-zabezpieczeniem-waszych-przysz-ych-potrzeb-i-d-ymy-do-tego-aby-cie-mieli-pewno-e-mo-ecie-na-nas-liczy-dzi-kujemy-wam-za-wasze-zaufanie-i-wierzymy-e-nasza-wsp-praca-przynosi-wzajemne-korzy-ci-i-e-razem-mo-emy-spokojnie-patrze-w-przysz-o-wiedz-c-e-jeste-cie-dobrze-zabezpieczeni-z-powa-aniem-span {
-  color: #727272;
-  font: 700 10px/163% "Inter-Bold", sans-serif;
+    color: #727272;
+    font: 700 10px/163% "Inter-Bold", sans-serif;
 }
 .szanowni-pa-stwo-z-przyjemno-ci-kieruj-do-was-kilka-s-w-jako-prezes-zarz-du-chcemy-podzi-kowa-wam-za-zaufanie-jakim-nas-obdarzacie-ka-dego-dnia-to-wasze-wsparcie-i-lojalno-s-si-nap-dow-naszej-dzia-alno-ci-kt-ra-trwa-ju-od-wielu-lat-rozumiemy-e-ubezpieczenia-to-wa-na-kwestia-w-waszym-yciu-dlatego-staramy-si-zapewni-wam-kompleksow-ochron-na-wypadek-r-nych-nieprzewidywalnych-sytuacji-nasza-misja-to-chroni-was-i-wasze-bliskie-osoby-oraz-pom-c-wam-w-trudnych-chwilach-wsp-lnie-pracujemy-nad-zabezpieczeniem-waszych-przysz-ych-potrzeb-i-d-ymy-do-tego-aby-cie-mieli-pewno-e-mo-ecie-na-nas-liczy-dzi-kujemy-wam-za-wasze-zaufanie-i-wierzymy-e-nasza-wsp-praca-przynosi-wzajemne-korzy-ci-i-e-razem-mo-emy-spokojnie-patrze-w-przysz-o-wiedz-c-e-jeste-cie-dobrze-zabezpieczeni-z-powa-aniem-span2 {
-  color: #727272;
-  font: 500 10px/163% "Inter-Medium", sans-serif;
+    color: #727272;
+    font: 500 10px/163% "Inter-Medium", sans-serif;
 }
 .group-1014 {
-  position: absolute;
-  inset: 0;
+    position: static;
+    inset: 0;
 }
 .group-9972 {
-  width: 221.22px;
-  height: 41px;
-  position: static;
+    width: 221.22px;
+    height: 41px;
+    position: static;
 }
 .a-relative2 {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: rgba(226, 226, 226, 0.6);
-  border-width: 1px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 221.22px;
-  height: 41px;
-  position: absolute;
-  left: 488px;
-  top: 320px;
-  backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: rgba(226, 226, 226, 0.6);
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 221.22px;
+    height: 41px;
+    position: absolute;
+    left: 488px;
+    top: 320px;
+    backdrop-filter: blur(5px);
 }
 .poznaj-nasz-ofert {
-  color: #1a1a1a;
-  text-align: center;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #1a1a1a;
+    text-align: center;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .div-overflow-hidden3 {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 100px;
-  padding: 40px 0px 0px 40px;
-  width: 227px;
-  height: 41px;
-  position: absolute;
-  left: calc(50% - -5px);
-  top: 320px;
-  box-shadow: 0px 0px 0px 4px rgba(156, 201, 178, 0.1),
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    padding: 40px 0px 0px 40px;
+    width: 227px;
+    height: 41px;
+    position: absolute;
+    left: calc(50% - -5px);
+    top: 320px;
+    box-shadow: 0px 0px 0px 4px rgba(156, 201, 178, 0.1),
     0px 0px 0px 3.5px rgba(156, 201, 178, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(5px);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
 }
 .znajd-najbli-szy-oddzia {
-  color: #1a1a1a;
-  text-align: left;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: calc(50% - 83.5px);
-  top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #1a1a1a;
+    text-align: left;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: calc(50% - 83.5px);
+    top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .div-overflow-hidden4 {
-  background: linear-gradient(
-    148.58deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(109, 109, 109, 0.09) 100%
-  );
-  border-radius: 20px;
-  padding: 40px 0px 0px 40px;
-  width: 1112px;
-  height: 503px;
-  position: absolute;
-  left: 150px;
-  top: 1366px;
-  box-shadow: 0px 0px 0px 4px rgba(156, 201, 178, 0.1),
+    background: linear-gradient(
+            148.58deg,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(109, 109, 109, 0.09) 100%
+    );
+    border-radius: 20px;
+    padding: 40px 0px 0px 40px;
+    width: 1112px;
+    height: 503px;
+    position: absolute;
+    left: 150px;
+    top: 1366px;
+    box-shadow: 0px 0px 0px 4px rgba(156, 201, 178, 0.1),
     0px 0px 0px 3.5px rgba(156, 201, 178, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .kalkulator-oc-ac-skorzystaj-z-naszego-kalkulatora-ubezpieczenia-samochodowego-i-znajd-ofert-idealn-dla-nowicjusza-jak-i-do-wiadczonego-kierowcy {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 40px;
-  top: 28px;
-  width: 418px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 40px;
+    top: 28px;
+    width: 418px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .kalkulator-oc-ac-skorzystaj-z-naszego-kalkulatora-ubezpieczenia-samochodowego-i-znajd-ofert-idealn-dla-nowicjusza-jak-i-do-wiadczonego-kierowcy-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .kalkulator-oc-ac-skorzystaj-z-naszego-kalkulatora-ubezpieczenia-samochodowego-i-znajd-ofert-idealn-dla-nowicjusza-jak-i-do-wiadczonego-kierowcy-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .button2 {
-  background: var(--primary-lightblue-500, #03a9f4);
-  border-radius: 6px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 190px;
-  height: 40px;
-  position: absolute;
-  left: 124px;
-  top: 167px;
+    background: var(--primary-lightblue-500, #03a9f4);
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    left: 124px;
+    top: 167px;
 }
 .div-relative {
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1px 0px 0px 1px;
-  width: 141px;
-  height: 101px;
-  position: absolute;
-  right: 209px;
-  bottom: 0px;
-  overflow: hidden;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px 0px 0px 1px;
+    width: 141px;
+    height: 101px;
+    position: absolute;
+    right: 209px;
+    bottom: 0px;
+    overflow: hidden;
 }
 ._1-1 {
-  border-radius: 12px;
-  width: 877px;
-  height: 493px;
-  position: absolute;
-  left: 450px;
-  top: 10px;
+    border-radius: 12px;
+    width: 877px;
+    height: 493px;
+    position: absolute;
+    left: 450px;
+    top: 10px;
 }
 .div-flex {
-  width: 1112px;
-  height: 540px;
-  position: absolute;
-  left: 150px;
-  top: 1893px;
+    width: 1112px;
+    height: 540px;
+    position: absolute;
+    left: 150px;
+    top: 1893px;
 }
 .div-overflow-hidden5 {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  height: 540px;
-  position: absolute;
-  right: 556px;
-  left: 12px;
-  top: 6px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    height: 540px;
+    position: absolute;
+    right: 556px;
+    left: 12px;
+    top: 6px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .pomoc-ca-dob-ponad-5000-agent-w-w-ca-ym-kraju-dba-o-to-aby-o-ka-dej-porze-dnia-i-nocy-zadba-o-twoje-bezpiecze-stwo {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 27px;
-  top: 46px;
-  width: 434px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 27px;
+    top: 46px;
+    width: 434px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .pomoc-ca-dob-ponad-5000-agent-w-w-ca-ym-kraju-dba-o-to-aby-o-ka-dej-porze-dnia-i-nocy-zadba-o-twoje-bezpiecze-stwo-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .pomoc-ca-dob-ponad-5000-agent-w-w-ca-ym-kraju-dba-o-to-aby-o-ka-dej-porze-dnia-i-nocy-zadba-o-twoje-bezpiecze-stwo-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .div-relative2 {
-  width: 524px;
-  height: 366px;
-  position: absolute;
-  right: 10px;
-  top: 174px;
+    width: 524px;
+    height: 366px;
+    position: absolute;
+    right: 10px;
+    top: 174px;
 }
 .pawe {
-  color: #000000;
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 6px;
-  top: 123px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #000000;
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 6px;
+    top: 123px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .krzysztof {
-  color: var(--neutral-400, #a3a3a3);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: -6px;
-  top: 39px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-400, #a3a3a3);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: -6px;
+    top: 39px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .renata {
-  color: var(--neutral-400, #a3a3a3);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 179px;
-  top: -27px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-400, #a3a3a3);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 179px;
+    top: -27px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .zygmunt {
-  color: var(--neutral-500, #737373);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 354px;
-  top: -15px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-500, #737373);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 354px;
+    top: -15px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .izabela {
-  color: var(--neutral-300, #d4d4d4);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 240px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-300, #d4d4d4);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .przemys-aw {
-  color: #000000;
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 233px;
-  top: 172px;
-  width: 345px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #000000;
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 233px;
+    top: 172px;
+    width: 345px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .remigiusz {
-  color: var(--neutral-500, #737373);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 202px;
-  top: 288px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-500, #737373);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 202px;
+    top: 288px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .anna {
-  color: #000000;
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 209px;
-  top: 105px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #000000;
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 209px;
+    top: 105px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .ilona {
-  color: var(--neutral-300, #d4d4d4);
-  text-align: left;
-  font: 400 64px/25.2px "OverTheRainbow-Regular", sans-serif;
-  position: absolute;
-  left: 17px;
-  top: -27px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-300, #d4d4d4);
+    text-align: left;
+    font: 400 64px/25.2px "OverTheRainbow-Regular", sans-serif;
+    position: absolute;
+    left: 17px;
+    top: -27px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .mateusz {
-  color: #000000;
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 252px;
-  top: 45px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #000000;
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 252px;
+    top: 45px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .jonasz {
-  color: var(--neutral-300, #d4d4d4);
-  text-align: left;
-  font: 400 64px/25.2px "Pecita-Book", sans-serif;
-  position: absolute;
-  left: 371px;
-  top: 117px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-300, #d4d4d4);
+    text-align: left;
+    font: 400 64px/25.2px "Pecita-Book", sans-serif;
+    position: absolute;
+    left: 371px;
+    top: 117px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .witold {
-  color: var(--neutral-400, #a3a3a3);
-  text-align: left;
-  font: 400 64px/25.2px "ShadowsIntoLight-Regular", sans-serif;
-  position: absolute;
-  left: 43px;
-  top: 300px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-400, #a3a3a3);
+    text-align: left;
+    font: 400 64px/25.2px "ShadowsIntoLight-Regular", sans-serif;
+    position: absolute;
+    left: 43px;
+    top: 300px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .marek {
-  color: var(--neutral-500, #737373);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 20px;
-  top: 177px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-500, #737373);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 177px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .marta {
-  color: var(--neutral-500, #737373);
-  text-align: left;
-  font: 400 64px/25.2px "OverTheRainbow-Regular", sans-serif;
-  position: absolute;
-  left: 202px;
-  top: 232px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-500, #737373);
+    text-align: left;
+    font: 400 64px/25.2px "OverTheRainbow-Regular", sans-serif;
+    position: absolute;
+    left: 202px;
+    top: 232px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .artur {
-  color: var(--neutral-600, #525252);
-  text-align: left;
-  font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
-  position: absolute;
-  left: 429px;
-  top: 426px;
-  width: 272px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: var(--neutral-600, #525252);
+    text-align: left;
+    font: 400 64px/25.2px "OoohBaby-Regular", sans-serif;
+    position: absolute;
+    left: 429px;
+    top: 426px;
+    width: 272px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .div-overflow-hidden6 {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  position: absolute;
-  right: 0px;
-  left: 568px;
-  bottom: -9px;
-  top: 9px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    left: 568px;
+    bottom: -9px;
+    top: 9px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .m-j-agent-dzi-ki-naszemu-portalowi-mo-esz-by-w-kontakcie-ze-swoim-agentem-ubezpieczeniowym-oraz-zg-osi-szkod-lub-wykupi-dodatkowe-produkty-w-atwy-spos-b {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 32px;
-  top: 38px;
-  width: 384px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 32px;
+    top: 38px;
+    width: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .m-j-agent-dzi-ki-naszemu-portalowi-mo-esz-by-w-kontakcie-ze-swoim-agentem-ubezpieczeniowym-oraz-zg-osi-szkod-lub-wykupi-dodatkowe-produkty-w-atwy-spos-b-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .m-j-agent-dzi-ki-naszemu-portalowi-mo-esz-by-w-kontakcie-ze-swoim-agentem-ubezpieczeniowym-oraz-zg-osi-szkod-lub-wykupi-dodatkowe-produkty-w-atwy-spos-b-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .rectangle-792 {
-  border-radius: 100px;
-  width: 249px;
-  height: 1px;
-  position: absolute;
-  left: 138px;
-  top: 213px;
+    border-radius: 100px;
+    width: 249px;
+    height: 1px;
+    position: absolute;
+    left: 138px;
+    top: 213px;
 }
 .rectangle-7922 {
-  background: linear-gradient(
-    90deg,
-    rgba(217, 217, 217, 0.3) 0%,
-    rgba(3, 169, 244, 0.8) 100%
-  );
-  border-radius: 100px;
-  width: 210px;
-  height: 2px;
-  position: absolute;
-  left: 174px;
-  top: 318px;
+    background: linear-gradient(
+            90deg,
+            rgba(217, 217, 217, 0.3) 0%,
+            rgba(3, 169, 244, 0.8) 100%
+    );
+    border-radius: 100px;
+    width: 210px;
+    height: 2px;
+    position: absolute;
+    left: 174px;
+    top: 318px;
 }
 .rectangle-793 {
-  background: linear-gradient(
-    90deg,
-    rgba(217, 217, 217, 0.3) 0%,
-    rgba(3, 169, 244, 0.8) 100%
-  );
-  border-radius: 100px;
-  width: 210px;
-  height: 2px;
-  position: absolute;
-  left: 160px;
-  top: 309px;
+    background: linear-gradient(
+            90deg,
+            rgba(217, 217, 217, 0.3) 0%,
+            rgba(3, 169, 244, 0.8) 100%
+    );
+    border-radius: 100px;
+    width: 210px;
+    height: 2px;
+    position: absolute;
+    left: 160px;
+    top: 309px;
 }
 .rectangle-794 {
-  background: linear-gradient(
-    90deg,
-    rgba(217, 217, 217, 0.3) 0%,
-    rgba(3, 169, 244, 0.8) 100%
-  );
-  border-radius: 100px;
-  width: 210px;
-  height: 2px;
-  position: absolute;
-  left: 174px;
-  top: 300px;
+    background: linear-gradient(
+            90deg,
+            rgba(217, 217, 217, 0.3) 0%,
+            rgba(3, 169, 244, 0.8) 100%
+    );
+    border-radius: 100px;
+    width: 210px;
+    height: 2px;
+    position: absolute;
+    left: 174px;
+    top: 300px;
 }
 .rectangle-796 {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  border-style: solid;
-  border-color: #e4e5e9;
-  border-width: 1px;
-  width: 113px;
-  height: 141px;
-  position: absolute;
-  left: 35px;
-  top: 241px;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
-  backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #e4e5e9;
+    border-width: 1px;
+    width: 113px;
+    height: 141px;
+    position: absolute;
+    left: 35px;
+    top: 241px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(2px);
 }
 .rectangle-797 {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  border-style: solid;
-  border-color: #e4e5e9;
-  border-width: 1px;
-  width: 113px;
-  height: 141px;
-  position: absolute;
-  left: 396px;
-  top: 240px;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
-  backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #e4e5e9;
+    border-width: 1px;
+    width: 113px;
+    height: 141px;
+    position: absolute;
+    left: 396px;
+    top: 240px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(2px);
 }
 .rectangle-807 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 99px;
-  height: 8px;
-  position: absolute;
-  left: 403px;
-  top: 265px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 99px;
+    height: 8px;
+    position: absolute;
+    left: 403px;
+    top: 265px;
 }
 .rectangle-808 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 80px;
-  height: 8px;
-  position: absolute;
-  left: 403px;
-  top: 281px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    left: 403px;
+    top: 281px;
 }
 .rectangle-809 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 93px;
-  height: 8px;
-  position: absolute;
-  left: 403px;
-  top: 297px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 93px;
+    height: 8px;
+    position: absolute;
+    left: 403px;
+    top: 297px;
 }
 .div-overflow-hidden7 {
-  background: var(--primary-lightblue-600, #039be5);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 252px;
-  top: 290px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: var(--primary-lightblue-600, #039be5);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 252px;
+    top: 290px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .lightning {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  overflow: visible;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    overflow: visible;
 }
 .rectangle-804 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 99px;
-  height: 8px;
-  position: absolute;
-  left: 41px;
-  top: 265px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 99px;
+    height: 8px;
+    position: absolute;
+    left: 41px;
+    top: 265px;
 }
 .rectangle-805 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 80px;
-  height: 8px;
-  position: absolute;
-  left: 41px;
-  top: 281px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    left: 41px;
+    top: 281px;
 }
 .rectangle-806 {
-  background: rgba(228, 229, 233, 0.5);
-  border-radius: 2px;
-  width: 93px;
-  height: 8px;
-  position: absolute;
-  left: 41px;
-  top: 297px;
+    background: rgba(228, 229, 233, 0.5);
+    border-radius: 2px;
+    width: 93px;
+    height: 8px;
+    position: absolute;
+    left: 41px;
+    top: 297px;
 }
 .steve-jobs-signature-2 {
-  width: 78px;
-  height: 18px;
-  position: absolute;
-  left: 60px;
-  top: 350px;
-  overflow: hidden;
+    width: 78px;
+    height: 18px;
+    position: absolute;
+    left: 60px;
+    top: 350px;
+    overflow: hidden;
 }
 .layer-2 {
-  height: auto;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
 }
 .div-flex2 {
-  width: 1112px;
-  height: 540px;
-  position: absolute;
-  left: 152px;
-  top: 3421px;
+    width: 1112px;
+    height: 540px;
+    position: absolute;
+    left: 152px;
+    top: 3421px;
 }
 .div-overflow-hidden8 {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  height: 540px;
-  position: absolute;
-  right: 568px;
-  left: 0px;
-  top: 0px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    height: 540px;
+    position: absolute;
+    right: 568px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .m-j-samoch-d-zadbaj-o-swoje-auto-i-opr-cz-obowi-zkowego-ubezpieczenia-komunikacyjnego-dodaj-dodatkowe-opcje {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 43px;
-  top: 27px;
-  width: 329px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 43px;
+    top: 27px;
+    width: 329px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .m-j-samoch-d-zadbaj-o-swoje-auto-i-opr-cz-obowi-zkowego-ubezpieczenia-komunikacyjnego-dodaj-dodatkowe-opcje-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .m-j-samoch-d-zadbaj-o-swoje-auto-i-opr-cz-obowi-zkowego-ubezpieczenia-komunikacyjnego-dodaj-dodatkowe-opcje-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .image-18 {
-  width: 320px;
-  height: 320px;
-  position: absolute;
-  left: 112px;
-  top: 220px;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 112px;
+    top: 220px;
 }
 .div-overflow-hidden9 {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  position: absolute;
-  right: 0px;
-  left: 568px;
-  bottom: 0px;
-  top: 0px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    left: 568px;
+    bottom: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .moja-firma-ubezpieczenie-grupowe-pracownik-w-budynk-w-firmowych-lub-floty-pojazd-w-to-wszystko-oferujemy-w-jednym-pakiecie {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 36px;
-  top: 28px;
-  width: 449px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 36px;
+    top: 28px;
+    width: 449px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .moja-firma-ubezpieczenie-grupowe-pracownik-w-budynk-w-firmowych-lub-floty-pojazd-w-to-wszystko-oferujemy-w-jednym-pakiecie-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .moja-firma-ubezpieczenie-grupowe-pracownik-w-budynk-w-firmowych-lub-floty-pojazd-w-to-wszystko-oferujemy-w-jednym-pakiecie-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .image-17 {
-  width: 279px;
-  height: 279px;
-  position: absolute;
-  left: 133px;
-  top: 188px;
+    width: 279px;
+    height: 279px;
+    position: absolute;
+    left: 133px;
+    top: 188px;
 }
 .div-flex3 {
-  width: 1112px;
-  height: 540px;
-  position: absolute;
-  left: 152px;
-  top: 2857px;
+    width: 1112px;
+    height: 540px;
+    position: absolute;
+    left: 152px;
+    top: 2857px;
 }
 .moja-rodzina-stw-rz-sw-j-w-asny-pakiet-ubezpieczeniowy-dla-siebie-i-swoich-najbli-szych {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 29px;
-  top: 25px;
-  width: 329px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 29px;
+    top: 25px;
+    width: 329px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .moja-rodzina-stw-rz-sw-j-w-asny-pakiet-ubezpieczeniowy-dla-siebie-i-swoich-najbli-szych-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .moja-rodzina-stw-rz-sw-j-w-asny-pakiet-ubezpieczeniowy-dla-siebie-i-swoich-najbli-szych-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .image-15 {
-  width: 277px;
-  height: 277px;
-  position: absolute;
-  left: 134px;
-  top: 180px;
+    width: 277px;
+    height: 277px;
+    position: absolute;
+    left: 134px;
+    top: 180px;
 }
 .m-j-dom-ubezpiecz-dom-mieszkanie-lub-inny-budynek-i-zadbaj-o-stabiln-przysz-o {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 32px;
-  top: 32px;
-  width: 449px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    width: 449px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .m-j-dom-ubezpiecz-dom-mieszkanie-lub-inny-budynek-i-zadbaj-o-stabiln-przysz-o-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .m-j-dom-ubezpiecz-dom-mieszkanie-lub-inny-budynek-i-zadbaj-o-stabiln-przysz-o-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .image-16 {
-  width: 295px;
-  height: 295px;
-  position: absolute;
-  left: 125px;
-  top: 160px;
+    width: 295px;
+    height: 295px;
+    position: absolute;
+    left: 125px;
+    top: 160px;
 }
 .specjalne-funkcje {
-  color: #1a1a1a;
-  text-align: left;
-  font: 600 36px/120% "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 215px;
-  top: 1262px;
-  width: 827px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #1a1a1a;
+    text-align: left;
+    font: 600 36px/120% "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 215px;
+    top: 1262px;
+    width: 827px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .wybierz-najlepsze-rozwi-zanie-dla-siebie-i-bliskich {
-  color: #1a1a1a;
-  text-align: left;
-  font: 600 36px/120% "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: 215px;
-  top: 2731px;
-  width: 943px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #1a1a1a;
+    text-align: left;
+    font: 600 36px/120% "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: 215px;
+    top: 2731px;
+    width: 943px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .span-line-gradient {
-  width: 1px;
-  position: absolute;
-  left: calc(50% - 569px);
-  bottom: 2884px;
-  top: 1891px;
-  overflow: hidden;
+    width: 1px;
+    position: absolute;
+    left: calc(50% - 569px);
+    bottom: 2884px;
+    top: 1891px;
+    overflow: hidden;
 }
 .frame-772 {
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.08);
-  border-width: 1px 0px 0px 0px;
-  width: 1439px;
-  height: 288px;
-  position: absolute;
-  left: calc(50% - 718px);
-  bottom: 0px;
-  overflow: hidden;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.08);
+    border-width: 1px 0px 0px 0px;
+    width: 1439px;
+    height: 288px;
+    position: absolute;
+    left: calc(50% - 718px);
+    bottom: 0px;
+    overflow: hidden;
 }
 .regulaminy-i-tabele {
-  color: #8d8d8d;
-  text-align: left;
-  font: 500 14px/120% "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 1234px;
-  top: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8d8d8d;
+    text-align: left;
+    font: 500 14px/120% "Inter-Medium", sans-serif;
+    position: absolute;
+    left: 1234px;
+    top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .polityka-prywatno-ci {
-  color: #8d8d8d;
-  text-align: left;
-  font: 500 14px/120% "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 1054px;
-  top: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8d8d8d;
+    text-align: left;
+    font: 500 14px/120% "Inter-Medium", sans-serif;
+    position: absolute;
+    left: 1054px;
+    top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 ._2023-pamp {
-  color: #8d8d8d;
-  text-align: left;
-  font: 500 14px/120% "Inter-Medium", sans-serif;
-  position: absolute;
-  left: 96px;
-  top: 215px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #8d8d8d;
+    text-align: left;
+    font: 500 14px/120% "Inter-Medium", sans-serif;
+    position: absolute;
+    left: 96px;
+    top: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .div-sc-a-50-d-6-bc-3-11 {
-  padding: 0px 117.52px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  left: 96px;
-  top: 84px;
+    padding: 0px 117.52px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 96px;
+    top: 84px;
 }
 .icon-facebook {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  position: relative;
-  overflow: visible;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    overflow: visible;
 }
 .icon-instagram {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  position: relative;
-  overflow: visible;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    overflow: visible;
 }
 .svg {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  position: relative;
-  overflow: hidden;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
 }
 .frame2 {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: calc(50% - 9px);
-  top: -0.28px;
-  overflow: visible;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: calc(50% - 9px);
+    top: -0.28px;
+    overflow: visible;
 }
 .image-13 {
-  width: 152px;
-  height: 30px;
-  position: absolute;
-  left: calc(50% - 665.5px);
-  top: 33px;
+    width: 152px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 665.5px);
+    top: 33px;
 }
 .community-section {
-  background: #ffffff;
-  width: 1440px;
-  height: 178px;
-  position: absolute;
-  left: calc(50% - 720px);
-  top: 3997px;
-  overflow: hidden;
+    background: #ffffff;
+    width: 1440px;
+    height: 178px;
+    position: absolute;
+    left: calc(50% - 720px);
+    top: 3997px;
+    overflow: hidden;
 }
 .group-995 {
-  position: absolute;
-  inset: 0;
+    position: absolute;
+    inset: 0;
 }
 .poznaj-nasz-ofert2 {
-  color: #1a1a1a;
-  text-align: center;
-  font: 600 36px/45px "Inter-SemiBold", sans-serif;
-  position: absolute;
-  left: calc(50% - 315px);
-  top: 54px;
-  width: 630px;
-  height: 124px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #1a1a1a;
+    text-align: center;
+    font: 600 36px/45px "Inter-SemiBold", sans-serif;
+    position: absolute;
+    left: calc(50% - 315px);
+    top: 54px;
+    width: 630px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .a-relative3 {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: rgba(226, 226, 226, 0.6);
-  border-width: 1px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 224px;
-  height: 41px;
-  position: absolute;
-  left: 484px;
-  top: 4189.06px;
-  transform-origin: 0 0;
-  transform: rotate(-0.015deg) scale(1, 1);
-  backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: rgba(226, 226, 226, 0.6);
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 224px;
+    height: 41px;
+    position: absolute;
+    left: 484px;
+    top: 4189.06px;
+    transform-origin: 0 0;
+    transform: rotate(-0.015deg) scale(1, 1);
+    backdrop-filter: blur(5px);
 }
 .div-overflow-hidden10 {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  height: 571px;
-  position: absolute;
-  right: 71px;
-  left: 974px;
-  top: 433px;
-  box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    height: 571px;
+    position: absolute;
+    right: 71px;
+    left: 974px;
+    top: 433px;
+    box-shadow: 0px 0px 0px 4px rgba(243, 244, 247, 1),
     0px 0px 0px 3.5px rgba(249, 249, 251, 1),
     0px 0px 0px 1px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.5px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(2px);
+    overflow: hidden;
+    backdrop-filter: blur(2px);
 }
 .pracownicze-plany-kapita-owe-stw-rz-plan-dla-swojej-firmy-bez-konieczno-ci-wychodzenia-z-biura {
-  color: #31373d;
-  text-align: left;
-  font: 400 18px/25.2px "-", sans-serif;
-  position: absolute;
-  left: 32px;
-  top: 32px;
-  width: 329px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #31373d;
+    text-align: left;
+    font: 400 18px/25.2px "-", sans-serif;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    width: 329px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .pracownicze-plany-kapita-owe-stw-rz-plan-dla-swojej-firmy-bez-konieczno-ci-wychodzenia-z-biura-span {
-  color: #31373d;
-  font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
+    color: #31373d;
+    font: 600 18px/25.2px "Inter-SemiBold", sans-serif;
 }
 .pracownicze-plany-kapita-owe-stw-rz-plan-dla-swojej-firmy-bez-konieczno-ci-wychodzenia-z-biura-span2 {
-  color: #31373d;
-  font: 400 18px/25.2px "Inter-Regular", sans-serif;
+    color: #31373d;
+    font: 400 18px/25.2px "Inter-Regular", sans-serif;
 }
 .group-1022 {
-  position: absolute;
-  inset: 0;
+    position: absolute;
+    inset: 0;
 }
 .linie {
-  width: 294.76px;
-  height: 369px;
-  position: absolute;
-  right: 13.57%;
-  left: 11.81%;
-  width: 74.62%;
-  bottom: 8.58%;
-  top: 26.8%;
-  height: 64.62%;
-  overflow: visible;
+    width: 294.76px;
+    height: 369px;
+    position: absolute;
+    right: 13.57%;
+    left: 11.81%;
+    width: 74.62%;
+    bottom: 8.58%;
+    top: 26.8%;
+    height: 64.62%;
+    overflow: visible;
 }
 .div-overflow-hidden11 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 314px;
-  top: 213px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 314px;
+    top: 213px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden12 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 172px;
-  top: 127px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 172px;
+    top: 127px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user2 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden13 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 87px;
-  top: 203px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 87px;
+    top: 203px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .icon-factory {
-  height: auto;
-  position: absolute;
-  right: 19.23%;
-  left: 19.23%;
-  width: 61.54%;
-  bottom: 23.08%;
-  top: 19.23%;
-  height: 57.69%;
-  overflow: visible;
+    height: auto;
+    position: absolute;
+    right: 19.23%;
+    left: 19.23%;
+    width: 61.54%;
+    bottom: 23.08%;
+    top: 19.23%;
+    height: 57.69%;
+    overflow: visible;
 }
 .div-overflow-hidden14 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 288px;
-  top: 425px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 288px;
+    top: 425px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user3 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden15 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 80px;
-  top: 351px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 80px;
+    top: 351px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user4 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden16 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 41px;
-  top: 290px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 41px;
+    top: 290px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user5 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden17 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 181px;
-  top: 262px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 181px;
+    top: 262px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user6 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden18 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 154px;
-  top: 463px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 154px;
+    top: 463px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user7 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden19 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 236px;
-  top: 496px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 236px;
+    top: 496px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user8 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden20 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 254px;
-  top: 329px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 254px;
+    top: 329px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user9 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden21 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 43px;
-  top: 439px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 43px;
+    top: 439px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user10 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .div-overflow-hidden22 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 176px;
-  top: 369px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 176px;
+    top: 369px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .icon-factory2 {
-  height: auto;
-  position: absolute;
-  right: 19.23%;
-  left: 19.23%;
-  width: 61.54%;
-  bottom: 23.08%;
-  top: 19.23%;
-  height: 57.69%;
-  overflow: visible;
+    height: auto;
+    position: absolute;
+    right: 19.23%;
+    left: 19.23%;
+    width: 61.54%;
+    bottom: 23.08%;
+    top: 19.23%;
+    height: 57.69%;
+    overflow: visible;
 }
 .div-overflow-hidden23 {
-  background: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 1.22px;
-  padding: 48.76px 0px 0px 48.76px;
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: 31px;
-  top: 134px;
-  box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
+    background: #ffffff;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1.22px;
+    padding: 48.76px 0px 0px 48.76px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 31px;
+    top: 134px;
+    box-shadow: 0px 0px 0px 4.88px rgba(156, 201, 178, 0.1),
     0px 0px 0px 4.27px rgba(156, 201, 178, 1),
     0px 0px 0px 1.22px rgba(228, 229, 233, 0.6),
     0px 0px 0px 0.61px rgba(228, 229, 233, 1);
-  overflow: hidden;
-  backdrop-filter: blur(1px);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 .user11 {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow: visible;
 }
 .a-relative4 {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: rgba(226, 226, 226, 0.6);
-  border-width: 1px;
-  padding: 8px 16px 8px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 224px;
-  height: 41px;
-  position: absolute;
-  left: 745px;
-  top: 4189.06px;
-  transform-origin: 0 0;
-  transform: rotate(-0.015deg) scale(1, 1);
-  backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    border-style: solid;
+    border-color: rgba(226, 226, 226, 0.6);
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 224px;
+    height: 41px;
+    position: absolute;
+    left: 745px;
+    top: 4189.06px;
+    transform-origin: 0 0;
+    transform: rotate(-0.015deg) scale(1, 1);
+    backdrop-filter: blur(5px);
 }
 .znajd-najbli-szy-oddzia2 {
-  color: #1a1a1a;
-  text-align: left;
-  font: 600 14px/120% "Inter-SemiBold", sans-serif;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    color: #1a1a1a;
+    text-align: left;
+    font: 600 14px/120% "Inter-SemiBold", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .image-14 {
-  width: 1440px;
-  position: absolute;
-  left: calc(50% - 720px);
-  bottom: 6.48%;
-  top: 88.21%;
-  height: 5.31%;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
+    width: 1440px;
+    position: absolute;
+    left: calc(50% - 720px);
+    bottom: 6.48%;
+    top: 88.21%;
+    height: 5.31%;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
 }
