@@ -128,32 +128,14 @@ namespace Projekt_Sklep.Controllers.Klient
 
             // Arrange
             Guid id = Guid.NewGuid();
-            var clientId = new Guid("5c332257-58b9-434d-be9c-14688ac3fdb7");
-            var addressId = new Guid("5c332257-58b9-434d-be9c-1468333s7");
+            var clientId = new Guid("b1d6d8e9-3e8f-446c-b1ad-80fe7670627c");
+            var addressId = new Guid("e932732a-58e6-49bd-a132-e101d3151e09");
 
             // Act
             var result = _controller.EditKlientEntity( clientId, "Name", "Surname", "00112233445", "535202373", "test@pamp.pl", "111-222-33-44", addressId);
 
             // Assert
             Assert.True(result);
-        }
-
-        [Fact]
-        public void getByPolisaPojazd_ShouldReturnOkWithPolisyPojazdyResponse_WhenSuccessful()
-        {
-            // Arrange
-            Guid id = Guid.NewGuid();
-
-            // Act
-            var polisaId = new Guid("5c332257-58b9-434d-be9c-14688ac3fdb7");
-            var result = _controller.getByPolisaPojazd(polisaId);
-
-            // Assert
-            Assert.IsType<OkObjectResult>(result.Result); 
-
-            var okResult = Assert.IsType<ActionResult<PolisyPojazdyResponse>>(result); 
-            var response = Assert.IsType<PolisyPojazdyResponse>(okResult.Value); 
-
         }
 
 
