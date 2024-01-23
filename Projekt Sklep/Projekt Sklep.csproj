@@ -47,7 +47,21 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\vars.css" />
   </ItemGroup>
 
+
+
+  <ItemGroup>
+    <AdditionalFiles Include="Pages\Counter.razor" />
+    <AdditionalFiles Include="Pages\Error.cshtml" />
+    <AdditionalFiles Include="Pages\FetchData.razor" />
+    <AdditionalFiles Include="Pages\Index.razor" />
+    <AdditionalFiles Include="Pages\_Host.cshtml" />
+    <AdditionalFiles Include="Shared\MainLayout.razor" />
+    <AdditionalFiles Include="Shared\NavMenu.razor" />
+    <AdditionalFiles Include="Shared\SurveyPrompt.razor" />
+  </ItemGroup>
 
 </Project>
