@@ -7,6 +7,7 @@ namespace Projekt_Sklep.Pages
     {
         public void OnGet() //w momencie gdy otwieramy stronê
         {
+
         }
 
         public void OnPost() //przy klikniêciu guzika
