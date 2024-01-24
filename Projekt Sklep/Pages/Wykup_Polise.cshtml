@@ -2,6 +2,7 @@
 @{
     string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
 }
+@model Projekt_Sklep.Pages.Wykup_PoliseModel
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -112,37 +113,37 @@
 </head>
 
 <body>
-    <form style="z-index = 1" method="post">
+    <form style="z-index: 1" method="post">
         <h1 class="display-4">Insurance Policies</h1>
 
         <div class="policy">
             <h2>Polisa na życie</h2>
             <p>Cena: $500/rok</p>
-            <button class="btn btn-primary" value="life">Szczegóły</button>
+            <button class="btn btn-primary" value="life" name="button">Szczegóły</button>
         </div>
         
         <div class="policy">
             <h2>Polisa na samochód</h2>
             <p>Cena: $800/rok</p>
-            <button class="btn btn-primary" value="car">Szczegóły</button>
+            <button class="btn btn-primary" value="car" name="button">Szczegóły</button>
         </div>
         
         <div class="policy">
             <h2>Polisa na nieruchomość</h2>
             <p>Cena: $1200/rok</p>
-            <button class="btn btn-primary" value="property">Szczegóły</button>
+            <button class="btn btn-primary" value="property" name="button">Szczegóły</button>
         </div>
         
         <div class="policy">
             <h2>Polisa na firmę</h2>
             <p>Cena: $1500/rok</p>
-            <button class="btn btn-primary" value="firm">Szczegóły</button>
+            <button class="btn btn-primary" value="firm" name="button">Szczegóły</button>
         
  
         <div class="policy">
             <h2>Polisa grupowa</h2>
             <p>Cena: $1000/rok za osobę</p>
-        <button class="btn btn-primary" value="group">Szczegóły</button>
+        <button class="btn btn-primary" value="group" name="button">Szczegóły</button>
         </div>
     </div>
     @Html.AntiForgeryToken()

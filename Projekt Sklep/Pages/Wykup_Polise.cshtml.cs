@@ -5,14 +5,18 @@ namespace Projekt_Sklep.Pages
 {
     public class Wykup_PoliseModel : PageModel
     {
+        [BindProperty]
+        public string button { get; set; }
         public void OnGet()
         {
         }
-        public IActionResult OnPost(string policyType)
+        public IActionResult OnPost()
         {
-            switch (policyType)
+            
+            switch (button)
             {
                 case "life":
+                    
                     return RedirectToPage("/Wybor_Polisy", new { policyType = "life", additionalData = "dane_dla_zycia" });
                 case "car":
                     return RedirectToPage("/Wybor_Polisy", new { policyType = "car", additionalData = "dane_dla_samochodu" });
