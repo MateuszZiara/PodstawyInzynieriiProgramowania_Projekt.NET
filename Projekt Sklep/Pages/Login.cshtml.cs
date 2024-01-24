@@ -39,7 +39,6 @@ namespace Projekt_Sklep.Pages
             bool passed = false;
             var okResult = result.Result as OkObjectResult;
             var klientList = okResult?.Value as List<Models.Klient.KlientEntity>;
-            Console.WriteLine(klientList.Count);
                 foreach (KlientEntity klientEntity in klientList)
                 {
                     if (klientEntity.Email == Email && klientEntity.Password == Password)
