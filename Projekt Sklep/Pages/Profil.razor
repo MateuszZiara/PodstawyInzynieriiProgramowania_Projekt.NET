@@ -36,12 +36,16 @@
     </style>
 </head>
 <body>
-    <h1 class="display-4" text-align: center>Informacje o Użytkowniku</h1>
+    <h1 class="display-4" style="text-align: center">Informacje o Użytkowniku</h1>
     
     <form method="get">
         <div class="mb-3">
-            <label for="userName" class="form-label">User Name:</label>
+            <label for="userName" class="form-label">Nazwa użytkownika:</label>
             <input type="text" class="form-control" id="userName" name="UserName" value="@@Model.UserName" readonly />
+        </div>
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">Hasło:</label>
+            <input type="tel" class="form-control" id="userPassword" name="userPassword" value="@@Model.userPassword" readonly />
         </div>
 
         <div class="mb-3">
@@ -50,7 +54,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="phoneNumber" class="form-label">Phone Number:</label>
+            <label for="phoneNumber" class="form-label">Numer Telefonu:</label>
             <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" value="@@Model.PhoneNumber" readonly />
         </div>
 
