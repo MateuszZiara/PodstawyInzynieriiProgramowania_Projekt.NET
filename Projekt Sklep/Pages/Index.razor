@@ -12,7 +12,7 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-@if (pojazdyList != null)
+@if (pojazdyList.Count > 0)
 {
     <table>
     @foreach (var pojazd in pojazdyList)
@@ -27,7 +27,7 @@ Welcome to your new app.
 }
 else
 {
-    <p>Loading...</p>
+    <p>Brak samochodów w liście</p>
 }
 
 @code {
@@ -35,7 +35,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // Fetch data from the service when the component is initialized
+       
         pojazdyList =  pojazdyService.getAll();
+        pojazdyList.Clear();
     }
 }
