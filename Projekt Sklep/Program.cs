@@ -32,7 +32,7 @@ builder.Services.AddFluentMigratorCore()
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 var migrator = scope.ServiceProvider.GetService<IMigrationRunner>();
-//trzeba to dodaæ ¿eby móc wykorzystaæ funkcje 
+//trzeba to dodaï¿½ ï¿½eby mï¿½c wykorzystaï¿½ funkcje 
 
 migrator.ListMigrations();
 migrator.MigrateUp();
