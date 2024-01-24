@@ -6,7 +6,7 @@ namespace Projekt_Sklep.Models.Pojazdy
     {
         public Pojazdy() : base() { }
 
-        public Pojazdy(Guid Id, int NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
+        public Pojazdy(Guid Id, string NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
         {
             this.Id = Id;
             this.NrRejestracyjny = NrRejestracyjny;
@@ -19,7 +19,7 @@ namespace Projekt_Sklep.Models.Pojazdy
         }
 
         public virtual Guid Id { get; set; }
-        public virtual int NrRejestracyjny { get; set; }
+        public virtual string NrRejestracyjny { get; set; }
         public virtual string Marka { get; set; }
         public virtual string Model { get; set; }
         public virtual int Rocznik { get; set; }

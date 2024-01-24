@@ -1,4 +1,5 @@
 ﻿using Projekt_Sklep.Models;
+using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Models.Pojazdy;
 
 namespace Projekt_Sklep.Persistence.Pojazdy
@@ -6,7 +7,7 @@ namespace Projekt_Sklep.Persistence.Pojazdy
     public class PojazdyRepository : IPojazdyRepository
     {
 
-        public bool edit(Guid Id, int NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
+        public bool edit(Guid Id, string NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
         {
             using (var session = NHibernateHelper.OpenSession())
             {
@@ -18,10 +19,8 @@ namespace Projekt_Sklep.Persistence.Pojazdy
                     foreach (var entity in query)
                     {
 
-                        if (NrRejestracyjny != -1)
+                        if (NrRejestracyjny != null)
                             entity.NrRejestracyjny = NrRejestracyjny;
-
-                        
 
                         if (Marka != null)
                             entity.Marka = Marka;
@@ -48,6 +47,18 @@ namespace Projekt_Sklep.Persistence.Pojazdy
 
             return true;
         }
+
+        public List<Models.Pojazdy.Pojazdy> getAll()
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                var pojazdyE = session.Query<Models.Pojazdy.Pojazdy>().ToList();
+                return pojazdyE;
+            }
+        }
+
+
+
 
     }
 }

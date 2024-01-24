@@ -22,9 +22,17 @@ namespace Projekt_Sklep.Persistence.Pojazdy
                 throw new ArgumentException();
             }
         }
-        public bool edit(Guid Id, int NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
+
+        //void rejestracyjny
+
+        public bool edit(Guid Id, string NrRejestracyjny, string Marka, string Model, int Rocznik, string VIN, bool Uszkodzony, Guid Klient)
         {
             return _entityRepository.edit(Id, NrRejestracyjny,Marka,Model, Rocznik,VIN, Uszkodzony, Klient);
+        }
+
+        public List<Models.Pojazdy.Pojazdy> getAll()
+        {
+            return _entityRepository.getAll();
         }
     }
 }

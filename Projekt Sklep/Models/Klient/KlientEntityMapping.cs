@@ -15,6 +15,8 @@ namespace Projekt_Sklep.Models.Klient
             Map(x => x.Email);
             Map(x => x.NIP);
             Map(x => x.Adres);
+            Map(x => x.Login);
+            Map(x => x.Password);
        
             Table(tablename);
         }

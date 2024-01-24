@@ -1,6 +1,8 @@
+using FluentAssertions.Common;
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 using Projekt_Sklep.Controllers.Adres;
+using Projekt_Sklep.Persistence.Pojazdy;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<PojazdyService>();
+
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
@@ -28,8 +32,12 @@ builder.Services.AddFluentMigratorCore()
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 var migrator = scope.ServiceProvider.GetService<IMigrationRunner>();
+//trzeba to dodaæ ¿eby móc wykorzystaæ funkcje 
+
 migrator.ListMigrations();
 migrator.MigrateUp();
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -60,6 +68,10 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+
+
+
+
 app.Run();
 
 

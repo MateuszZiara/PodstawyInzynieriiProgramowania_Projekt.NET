@@ -104,7 +104,7 @@ namespace Projekt_Sklep.Controllers.Pojazdy
 
         //Funkcje własne
         [HttpPost("Edit/{Id}")]
-        public bool EditPojazdy([Required]bool Uszkodzony, Guid Id, int NrRejestracyjny = -1, string Marka = null, string Model = null, int Rocznik = -1, string VIN = null, Guid? Klient = null)
+        public bool EditPojazdy([Required]bool Uszkodzony, Guid Id, string NrRejestracyjny = null, string Marka = null, string Model = null, int Rocznik = -1, string VIN = null, Guid? Klient = null)
         {
             Guid guid = Guid.NewGuid();
             if (Klient == null)

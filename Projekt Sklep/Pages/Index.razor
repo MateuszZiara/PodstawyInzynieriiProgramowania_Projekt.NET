@@ -1,4 +1,8 @@
 ﻿@page "/"
+@using Projekt_Sklep.Models.Pojazdy
+@using Projekt_Sklep.Persistence.Pojazdy
+@using Projekt_Sklep.Controllers.Pojazdy
+@inject PojazdyService pojazdyService
 
 <PageTitle>Index</PageTitle>
 
@@ -6,4 +10,32 @@
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@if (pojazdyList != null)
+{
+    <table>
+    @foreach (var pojazd in pojazdyList)
+    {
+        <tr>
+            <td>@pojazd.NrRejestracyjny</td>
+            <td>@pojazd.Marka</td>
+            <td>@pojazd.Rocznik</td>
+        </tr>
+    }
+    </table>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    private List<Pojazdy> pojazdyList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch data from the service when the component is initialized
+        pojazdyList =  pojazdyService.getAll();
+    }
+}
