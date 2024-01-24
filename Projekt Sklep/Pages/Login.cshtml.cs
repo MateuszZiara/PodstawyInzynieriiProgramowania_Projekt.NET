@@ -14,6 +14,7 @@ namespace Projekt_Sklep.Pages
         
         public void OnGet() // When the page is opened
         {
+
         }
 
         public void OnPost() // When the form is submitted
