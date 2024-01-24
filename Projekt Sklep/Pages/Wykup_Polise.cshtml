@@ -110,38 +110,43 @@
             }
     </style>
 </head>
+
 <body>
-    <h1 class="display-4" style="text-align:center">Wybierz Polisę</h1>
+    <form style="z-index = 1" method="post">
+        <h1 class="display-4">Insurance Policies</h1>
 
-    <div class="policy">
-        <h2>Polisa na życie</h2>
-        <p>Cena: $500/rok</p>
-        <button class="btn btn-primary" onclick="location.href='PolicyDetails?policyType=life'">Szczegóły</button>
+        <div class="policy">
+            <h2>Polisa na życie</h2>
+            <p>Cena: $500/rok</p>
+            <button class="btn btn-primary" value="life">Szczegóły</button>
+        </div>
+        
+        <div class="policy">
+            <h2>Polisa na samochód</h2>
+            <p>Cena: $800/rok</p>
+            <button class="btn btn-primary" value="car">Szczegóły</button>
+        </div>
+        
+        <div class="policy">
+            <h2>Polisa na nieruchomość</h2>
+            <p>Cena: $1200/rok</p>
+            <button class="btn btn-primary" value="property">Szczegóły</button>
+        </div>
+        
+        <div class="policy">
+            <h2>Polisa na firmę</h2>
+            <p>Cena: $1500/rok</p>
+            <button class="btn btn-primary" value="firm">Szczegóły</button>
+        
+ 
+        <div class="policy">
+            <h2>Polisa grupowa</h2>
+            <p>Cena: $1000/rok za osobę</p>
+        <button class="btn btn-primary" value="group">Szczegóły</button>
+        </div>
     </div>
-
-    <div class="policy">
-        <h2>Polisa na samochód</h2>
-        <p>Cena: $800/rok</p>
-        <button class="btn btn-primary" onclick="location.href='PolicyDetails?policyType=car'">Szczegóły</button>
-    </div>
-
-    <div class="policy">
-        <h2>Polisa na nieruchomość</h2>
-        <p>Cena: $1200/rok</p>
-        <button class="btn btn-primary" onclick="location.href='PolicyDetails?policyType=property'">Szczegóły</button>
-    </div>
-
-    <div class="policy">
-        <h2>Polisa na firmę</h2>
-        <p>Cena: $1500/rok</p>
-        <button class="btn btn-primary" onclick="location.href='PolicyDetails?policyType=business'">Szczegóły</button>
-    </div>
-
-    <div class="policy">
-        <h2>Polisa grupowa</h2>
-        <p>Cena: $1000/rok za osobę</p>
-        <button class="btn btn-primary" onclick="location.href='PolicyDetails?policyType=group'">Szczegóły</button>
-    </div>
+    @Html.AntiForgeryToken()
+    </form>
 
     <!-- Dodaj skrypty Bootstrapa, jeśli są potrzebne -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eOJMYsd53UQ49M4a/9kPxB5lRXPJwGrMNGfx8rDIz3zOfkAdU2CEbrfeFgptJkoE" crossorigin="anonymous"></script>
