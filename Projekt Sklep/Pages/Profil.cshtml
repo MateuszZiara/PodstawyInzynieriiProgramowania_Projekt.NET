@@ -1,4 +1,5 @@
 ﻿@page "/Profil"
+@model Projekt_Sklep.Pages.ProfilModel
 @{
     string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
 }
@@ -124,22 +125,23 @@
     <form method="get">
         <div class="mb-3">
             <label for="userName" class="form-label">Nazwa użytkownika:</label>
-            <input type="text" class="form-control" id="userName" name="UserName" value="@@Model.UserName" readonly />
+            <input type="text" class="form-control" id="userName" name="UserName" value="@ViewData["UserName"]" readonly />
         </div>
         <div class="mb-3">
             <label for="userPassword" class="form-label">Hasło:</label>
-            <input type="tel" class="form-control" id="userPassword" name="userPassword" value="@@Model.userPassword" readonly />
+            <input type="tel" class="form-control" id="userPassword" name="userPassword" value="@ViewData["UserPassword"]" readonly />
         </div>
 
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="Email" value="@@Model.Email" readonly />
+            <input type="email" class="form-control" id="email" name="Email" value="@ViewData["Email"]" readonly />
         </div>
 
         <div class="mb-3">
             <label for="phoneNumber" class="form-label">Numer Telefonu:</label>
-            <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" value="@@Model.PhoneNumber" readonly />
+            <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" value="@ViewData["PhoneNumber"]" readonly />
         </div>
+
 
         <button type="submit" class="btn btn-primary">Get User Data</button>
     </form>

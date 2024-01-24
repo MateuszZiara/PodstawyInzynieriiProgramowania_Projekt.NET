@@ -44,6 +44,19 @@ namespace Projekt_Sklep.Pages
                     if (klientEntity.Email == Email && klientEntity.Password == Password)
                     {
                         passed = true;
+                    KlientSingleton.Instance.Id = klientEntity.Id;
+                    KlientSingleton.Instance.Name = klientEntity.Name;
+                    KlientSingleton.Instance.LastName = klientEntity.LastName;
+                    KlientSingleton.Instance.Pesel = klientEntity.Pesel;
+                    KlientSingleton.Instance.NumerTelefonu = klientEntity.NumerTelefonu;
+                    KlientSingleton.Instance.Email = klientEntity.Email;
+                    KlientSingleton.Instance.NIP = klientEntity.NIP;
+                    KlientSingleton.Instance.Login = klientEntity.Login;
+                    KlientSingleton.Instance.Password = klientEntity.Password;
+                    KlientSingleton.Instance.Adres = klientEntity.Adres;
+
+
+
                         break;
                     }
                 }
