@@ -48,19 +48,6 @@ namespace Projekt_Sklep.Pages
 
         public IActionResult OnPost()
         {
-            System.Console.WriteLine($"Name: {Name}");
-            System.Console.WriteLine($"LastName: {LastName}");
-            System.Console.WriteLine($"Pesel: {Pesel}");
-            System.Console.WriteLine($"PhoneNumber: {PhoneNumber}");
-            System.Console.WriteLine($"Email: {email}");
-            System.Console.WriteLine($"NIP: {NIP}");
-            System.Console.WriteLine($"Login: {Login}");
-            System.Console.WriteLine($"Password: {Password}");
-            System.Console.WriteLine($"KodPocztowy: {KodPocztowy}");
-            System.Console.WriteLine($"Miasto: {Miasto}");
-            System.Console.WriteLine($"Wojewodztwo: {Wojewodztwo}");
-            System.Console.WriteLine($"Panstwo: {Panstwo}");
-
             KlientEntityController controller = new KlientEntityController();
             KlientEntity klientEntity = new KlientEntity();
             klientEntity.Name = Name;
@@ -80,7 +67,10 @@ namespace Projekt_Sklep.Pages
             Adres finalAdres = new Adres();
             foreach (Adres adres in adresList)
             {
-                if (adres.KodPocztowy == KodPocztowy && adres.Miasto == Miasto && adres.Wojewodztwo == Wojewodztwo && adres.Panstwo == Panstwo)
+                if (adres.KodPocztowy.ToLower() == KodPocztowy.ToLower() && 
+                    adres.Miasto.ToLower() == Miasto.ToLower() && 
+                    adres.Wojewodztwo.ToLower() == Wojewodztwo.ToLower() && 
+                    adres.Panstwo.ToLower() == Panstwo.ToLower())
                 {
                     passed = true;
                     adresID = adres.Id;
@@ -98,7 +88,7 @@ namespace Projekt_Sklep.Pages
                 adresController.CreateAdresEntity(adres); ;
                 foreach (Adres a in adresList)
                 {
-                    if (a.KodPocztowy == KodPocztowy && a.Miasto == Miasto && a.Wojewodztwo == Wojewodztwo && a.Panstwo == Panstwo)
+                    if (a.KodPocztowy.ToLower() == KodPocztowy.ToLower() && a.Miasto.ToLower() == Miasto.ToLower() && a.Wojewodztwo.ToLower() == Wojewodztwo.ToLower() && a.Panstwo.ToLower() == Panstwo.ToLower())
                     {
                         adres.Id = a.Id;
                     }
