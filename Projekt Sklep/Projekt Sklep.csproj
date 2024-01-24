@@ -56,7 +56,6 @@
   <ItemGroup>
     <AdditionalFiles Include="Pages\Counter.razor" />
     <AdditionalFiles Include="Pages\Error.cshtml" />
-    <AdditionalFiles Include="Pages\FetchData.razor" />
     <AdditionalFiles Include="Pages\Index.razor" />
     <AdditionalFiles Include="Pages\_Host.cshtml" />
     <AdditionalFiles Include="Shared\MainLayout.razor" />

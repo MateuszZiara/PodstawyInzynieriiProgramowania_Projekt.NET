@@ -1,0 +1,68 @@
+﻿@page "/Roszczenia"
+@{
+    string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
+}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title style="text-align:center">Roszczenia</title>
+    
+    <!-- Dodaj link do stylów Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Dodaj link do Twoich własnych styli -->
+    <link rel="stylesheet" href="@docsearchCss">
+    
+    <style>
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="display-4" style="text-align:center">Roszczenia</h1>
+    
+    <form method="post">
+        <div class="mb-3">
+            <label for="policyNumber" class="form-label">Numer polisy:</label>
+            <input type="text" class="form-control" id="policyNumber" name="PolicyNumber" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="claimDescription" class="form-label">Opis roszczenia:</label>
+            <textarea class="form-control" id="claimDescription" name="ClaimDescription" rows="4" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="claimAmount" class="form-label">Kwota roszczenia:</label>
+            <input type="number" class="form-control" id="claimAmount" name="ClaimAmount" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="claimDate" class="form-label">Data zdarzenia:</label>
+            <input type="date" class="form-control" id="claimDate" name="ClaimDate" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Zgłoś roszczenie</button>
+    </form>
+
+    <!-- Dodaj skrypty Bootstrapa, jeśli są potrzebne -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eOJMYsd53UQ49M4a/9kPxB5lRXPJwGrMNGfx8rDIz3zOfkAdU2CEbrfeFgptJkoE" crossorigin="anonymous"></script>
+</body>
+</html>
