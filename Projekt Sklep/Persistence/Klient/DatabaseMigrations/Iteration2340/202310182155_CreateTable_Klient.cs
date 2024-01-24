@@ -20,6 +20,8 @@ namespace Projekt_Sklep.Persistence.Klient.DatabaseMigrations.Iteration2340
                     .WithColumn(nameof(KlientEntity.NumerTelefonu)).AsString().NotNullable()
                     .WithColumn(nameof(KlientEntity.Email)).AsString().NotNullable()
                     .WithColumn(nameof(KlientEntity.NIP)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.Login)).AsString().NotNullable()
+                    .WithColumn(nameof(KlientEntity.Password)).AsString().NotNullable()
                     .WithColumn("Adres").AsGuid().NotNullable();
                    // .WithColumn("PolisaID").AsGuid().NotNullable();
                 Create.ForeignKey("FK_Adres3").FromTable(tableName).ForeignColumn("Adres").ToTable("Adres").PrimaryColumn("Id");
