@@ -1,6 +1,7 @@
 ﻿@page "/register"
 @model Projekt_Sklep.Pages.RegisterModel
 @{
+
     string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
 }
     <!doctype html>
@@ -164,17 +165,59 @@
     <main class="form-signin w-100 m-auto text-center" >
         
   <form style="z-index = 1">
-    <img class="mb-4" src="./logoColor.png" alt="logo PAMP" width="72">
+    <img class="mb-4" src="./static/Auth/horseyColor.png" alt="logo PAMP" width="72">
     <h1 class="h3 mb-3 fw-normal">Witamy</h1>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="anna@pamp.pl">
-      <label for="floatingInput">Adres email</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Hasło">
-      <label for="floatingPassword">Hasło</label>
-    </div>
+            <div class="form-floating">
+                <input type="Name" class="form-control" id="floatingInput" placeholder="Mateusz">
+                <label for="floatingInput">Imię</label>
+            </div>
+            <div class="form-floating">
+                <input type="LastName" class="form-control" id="floatingInput" placeholder="GB">
+                <label for="floatingInput">Nazwisko</label>
+            </div>
+            <div class="form-floating">
+                <input type="Pesel" class="form-control" id="floatingInput" placeholder="Pesel">
+                <label for="floatingInput">Pesel</label>
+            </div>
+            <div class="form-floating">
+                <input type="PhoneNumber" class="form-control" id="floatingInput" placeholder="PhoneNumber">
+                <label for="floatingInput">PhoneNumber</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="anna@pamp.pl">
+                <label for="floatingInput">Adres email</label>
+            </div>
+            <div class="form-floating">
+                <input type="NIP" class="form-control" id="floatingInput" placeholder="NIP">
+                <label for="floatingInput">NIP</label>
+            </div>
+            <div class="form-floating">
+                <input type="Login" class="form-control" id="floatingInput" placeholder="Login">
+                <label for="floatingInput">Login</label>
+            </div>
+            <div class="form-floating">
+                <input type="Password" class="form-control" id="floatingInput" placeholder="Password">
+                <label for="floatingInput">Password</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select" id="addressSelect" name="AddressId">
+                    @foreach (var address in Model.Addresses)
+                    {
+                        <option value="@address.Id">@address.Id</option>
+                    }
+                    <option value="-1">Własne ID</option>
+                </select>
+
+                <label for="addressSelect">Adres</label>
+            </div>
+            <div class="form-floating">
+                <input type="WlasnyAdres" class="form-control" id="floatingInput" placeholder="WlasnyAdres">
+                <label for="floatingInput">Własny Adres</label>
+            </div>
+
+
+
 
     <div class="form-check text-start my-3">
       <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
