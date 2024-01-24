@@ -55,6 +55,7 @@
 
   <ItemGroup>
     <AdditionalFiles Include="Pages\Counter.razor" />
+    <AdditionalFiles Include="Pages\." />
     <AdditionalFiles Include="Pages\Error.cshtml" />
     <AdditionalFiles Include="Pages\Index.razor" />
     <AdditionalFiles Include="Pages\_Host.cshtml" />
@@ -67,6 +68,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\assets\brand\bootstrap-logo-white.svg" />
+    <None Include="wwwroot\assets\." />
     <None Include="wwwroot\assets\brand\bootstrap-logo.svg" />
     <None Include="wwwroot\assets\dist\css\bootstrap.min.css.map" />
     <None Include="wwwroot\assets\dist\css\bootstrap.rtl.min.css.map" />
