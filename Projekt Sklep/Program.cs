@@ -1,7 +1,9 @@
 using FluentAssertions.Common;
 using FluentMigrator.Runner;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 using Projekt_Sklep.Controllers.Adres;
+using Projekt_Sklep.Models.Klient;
 using Projekt_Sklep.Persistence.Pojazdy;
 using System.Reflection;
 
@@ -13,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<PojazdyService>();
-
+builder.Services.AddSingleton<KlientSingleton>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
