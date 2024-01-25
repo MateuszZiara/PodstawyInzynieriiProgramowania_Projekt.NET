@@ -13,6 +13,6 @@
         
         public virtual Guid Id {  get; set; }
         public virtual string Dorosly_dziecko {  get; set; }
-        public virtual bool Wiek { get; set; } // true > 26, false < 26
+        public virtual bool Wiek { get; set; } 
     }
 }
