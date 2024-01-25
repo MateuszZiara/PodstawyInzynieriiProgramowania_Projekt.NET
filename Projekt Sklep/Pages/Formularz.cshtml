@@ -1,7 +1,10 @@
 ﻿@page "/Formularz"
+@using Projekt_Sklep.Controllers.Adres
+@using Projekt_Sklep.Models.Klient
 @{
     string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
 }
+@model Projekt_Sklep.Pages.FormularzModel
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -119,53 +122,48 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="firstName" class="form-label">First Name:</label>
-                <input type="text" class="form-control" id="firstName" name="FirstName" required />
+                <input type="text" class="form-control" id="firstName" name="FirstName" required placeholder="@KlientSingleton.Instance.Name"/>
             </div>
 
             <div class="col-md-6 mb-3">
                 <label for="lastName" class="form-label">Last Name:</label>
-                <input type="text" class="form-control" id="lastName" name="LastName" required />
+                <input type="text" class="form-control" id="lastName" name="LastName" required placeholder="@KlientSingleton.Instance.LastName"/>
             </div>
         </div>
 
         <div class="mb-3">
             <label for="userName" class="form-label">Username:</label>
-            <input type="text" class="form-control" id="userName" name="UserName" required />
+            <input type="text" class="form-control" id="userName" name="UserName" required placeholder="@KlientSingleton.Instance.Login"/>
         </div>
 
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="Email" required />
+            <input type="email" class="form-control" id="email" name="Email" required placeholder="@KlientSingleton.Instance.Email"/>
         </div>
 
         <div class="mb-3">
             <label for="address" class="form-label">Address:</label>
-            <textarea class="form-control" id="address" name="Address" rows="3" required></textarea>
+            <textarea class="form-control" id="address" name="Address" rows="3" required placeholder="@Model.adresString"></textarea>
         </div>
 
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="pesel" class="form-label">PESEL:</label>
-                <input type="text" class="form-control" id="pesel" name="Pesel" required />
+                <input type="text" class="form-control" id="pesel" name="Pesel" required placeholder="@KlientSingleton.Instance.Pesel"/>
             </div>
 
             <div class="col-md-6 mb-3">
                 <label for="phoneNumber" class="form-label">Phone Number:</label>
-                <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" required />
+                <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" required placeholder="@KlientSingleton.Instance.NumerTelefonu" />
             </div>
         </div>
 
         <div class="mb-3">
             <label for="nip" class="form-label">NIP (optional):</label>
-            <input type="text" class="form-control" id="nip" name="Nip" />
+            <input type="text" class="form-control" id="nip" name="Nip" placeholder="@KlientSingleton.Instance.NIP"/>
         </div>
-
-        <div class="mb-3">
-            <label for="regon" class="form-label">REGON (optional):</label>
-            <input type="text" class="form-control" id="regon" name="Regon" />
-        </div>
-
-        <button type="submit" class="btn btn-primary">Register</button>
+        
+        <button type="submit" class="btn btn-primary">Zmień dane</button>
     </form>
 
     <!-- Dodaj skrypty Bootstrapa, jeśli są potrzebne -->
