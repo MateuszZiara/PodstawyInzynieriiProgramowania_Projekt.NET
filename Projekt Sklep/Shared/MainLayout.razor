@@ -1,5 +1,8 @@
-﻿@inherits LayoutComponentBase
-
+﻿@using Projekt_Sklep.Models.Pojazdy
+@using Projekt_Sklep.Models.Klient
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 <PageTitle>BlazorApp3</PageTitle>
 
 <div class="page">
@@ -12,5 +15,15 @@
             @Body
         </article>
         
+        @code {
+                protected override async Task OnInitializedAsync()
+                {
+                    if (KlientSingleton.Instance.Id == Guid.Empty)
+                    {
+                        Navigation.NavigateTo("/");
+                    }
+                }
+            }
     </main>
+    
 </div>

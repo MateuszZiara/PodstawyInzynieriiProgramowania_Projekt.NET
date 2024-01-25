@@ -2,7 +2,9 @@
 @using Projekt_Sklep.Models.Pojazdy
 @using Projekt_Sklep.Persistence.Pojazdy
 @using Projekt_Sklep.Controllers.Pojazdy
+@using Projekt_Sklep.Models.Klient
 @inject PojazdyService pojazdyService
+@inject NavigationManager Navigation
 
 <PageTitle>Index</PageTitle>
 
@@ -35,8 +37,14 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-       
-        pojazdyList =  pojazdyService.getAll();
-        pojazdyList.Clear();
+        if (KlientSingleton.Instance.Id == Guid.Empty)
+        {
+            Navigation.NavigateTo("/");
+        }
+        else
+        {
+            pojazdyList = pojazdyService.getAll();
+            pojazdyList.Clear();
+        }
     }
 }
