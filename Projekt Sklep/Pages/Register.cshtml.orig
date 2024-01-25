@@ -1,16 +1,23 @@
-﻿@page "/"
-@model Projekt_Sklep.Pages.LoginModel
+﻿@page "/register"
+@model Projekt_Sklep.Pages.RegisterModel
 @{
+
     string docsearchCss = "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
 }
-
     <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
     <script src="./assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Signin Template · Bootstrap v5.3</title>
 
-    <!-- Dodaj link do stylów Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+
     <link rel="stylesheet" href="@docsearchCss">
 
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -157,25 +164,91 @@
     </div>
     <main class="form-signin w-100 m-auto text-center" >
         
-      <form style="z-index = 1" method="post">
-        
-        <img class="mb-4" src="./static/Auth/horseyColor.png" alt="logo PAMP" width="72">
-        <h1 class="h3 mb-3 fw-normal">Witamy</h1>
+  <form style="z-index = 1" method="post">
+    <img class="mb-4" src="./static/Auth/horseyColor.png" alt="logo PAMP" width="72">
+    <h1 class="h3 mb-3 fw-normal">Witamy</h1>
 
-         <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" name="Email" placeholder="anna@pamp.pl">
+            <div class="form-floating">
+                <input type="Name" class="form-control" id="floatingInput" placeholder="Mateusz" name="Name">
+                <label for="floatingInput">Imię</label>
+            </div>
+            <div class="form-floating">
+                <input type="LastName" class="form-control" id="floatingInput" placeholder="GB" name="LastName">
+                <label for="floatingInput">Nazwisko</label>
+            </div>
+            <div class="form-floating">
+                <input type="Pesel" class="form-control" id="floatingInput" placeholder="Pesel" name="Pesel">
+                <label for="floatingInput">Pesel</label>
+            </div>
+            <div class="form-floating">
+                <input type="PhoneNumber" class="form-control" id="floatingInput" placeholder="PhoneNumber" name="PhoneNumber">
+                <label for="floatingInput">PhoneNumber</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="anna@pamp.pl" name="email">
                 <label for="floatingInput">Adres email</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" name="Password" placeholder="Hasło">
-                <label for="floatingPassword">Hasło</label>
+                <input type="NIP" class="form-control" id="floatingInput" placeholder="NIP" name="NIP">
+                <label for="floatingInput">NIP</label>
             </div>
-        <button class="btn btn-primary w-100 py-2" type="submit">Zaloguj się</button>
-        <a href="/register">
-          <p>Nie masz konta? Zarejestruj się</p></a>
-        <p class="mt-5 mb-3 text-body-secondary">&copy; 2023-2024</p>
-        @Html.AntiForgeryToken()
-      </form>
+            <div class="form-floating">
+                <input type="Login" class="form-control" id="floatingInput" placeholder="Login" name="Login">
+                <label for="floatingInput">Login</label>
+            </div>
+            <div class="form-floating">
+                <input type="Password" class="form-control" id="floatingInput" placeholder="Password" name="Password">
+                <label for="floatingInput">Password</label>
+            </div>
+            <div class="form-floating">
+<<<<<<< HEAD
+                <input type="KodPocztowy" class="form-control" id="floatingInput" placeholder="WlasnyAdres" name="KodPocztowy">
+                <label for="floatingInput">Kod pocztowy</label>
+             </div>
+             <div class="form-floating">
+               <input type="KodPocztowy" class="form-control" id="floatingInput" placeholder="WlasnyAdres" name="Miasto">
+                <label for="floatingInput">Miasto</label>
+             </div>
+             <div class="form-floating">
+                <input type="KodPocztowy" class="form-control" id="floatingInput" placeholder="WlasnyAdres" name="Wojewodztwo">
+                <label for="floatingInput">Wojewodztwo</label>
+              </div>
+             <div class="form-floating">
+               <input type="KodPocztowy" class="form-control" id="floatingInput" placeholder="WlasnyAdres" name="Panstwo">
+                 <label for="floatingInput">Panstwo</label>
+              </div>
+    <button class="btn btn-primary w-100 py-2" type="submit">Zaloguj się</button>
+=======
+                <select class="form-select" id="addressSelect" name="AddressId">
+                    @foreach (var address in Model.Addresses)
+                    {
+                        <option value="@address.Id">@address.Id</option>
+                    }
+                    <option value="-1">Własne ID</option>
+                </select>
+
+                <label for="addressSelect">Adres</label>
+            </div>
+            <div class="form-floating">
+                <input type="WlasnyAdres" class="form-control" id="floatingInput" placeholder="WlasnyAdres">
+                <label for="floatingInput">Własny Adres</label>
+            </div>
+
+
+
+
+    <div class="form-check text-start my-3">
+      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Zapamiętaj mnie
+      </label>
+    </div>
+    <button class="btn btn-primary w-100 py-2" type="submit">Zarejestruj się</button>
+>>>>>>> 60e50e333c1ca06e60e68ea64549409d5a6a82dd
+    <a href="/"><p>Posiadasz konto? Zaloguj się</p></a>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2023-2024</p>
+    @Html.AntiForgeryToken()
+  </form>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
