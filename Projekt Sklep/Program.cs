@@ -15,7 +15,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<PojazdyService>();
-builder.Services.AddSingleton<KlientSingleton>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
@@ -30,6 +29,7 @@ builder.Services.AddFluentMigratorCore()
                     .ScanIn(Assembly.GetExecutingAssembly()).For.All();
                })
                .AddLogging(config => config.AddFluentMigratorConsole());
+
 
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
